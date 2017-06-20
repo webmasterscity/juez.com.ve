@@ -3,8 +3,8 @@
 class db {
 //CREAMOS LOS ATRIBUTOS DE MANERA PRIVADA
 	public $dns="localhost",
-			$usuario="webmasterscity",
-			$password="-dS0082ds",
+			$usuario="ovi",
+			$password="ovi",
 			$db="ovi",
 			$res,
 			$mysqli;
@@ -78,7 +78,7 @@ class db {
 		$usu='NULL';
 		else
 		$usu=$_SESSION['cod_usuario'];
-		$descripcion=$this->mysqli->real_escape_string($descripcion);
+		//$descripcion=$this->mysqli->real_escape_string($descripcion);
 		$sql="INSERT INTO bitacora (evento,descripcion,cod_usuario) VALUES('".$evento."','".$descripcion."',".$usu.")";
 		
 		$this->ejecutar($sql);
