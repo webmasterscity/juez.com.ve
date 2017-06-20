@@ -1,0 +1,5 @@
+CREATE TABLE uptp (
+    solucion VARCHAR(50)
+    );
+INSERT INTO uptp (solucion) VALUES('Hola mundo!');
+SELECT solucion FROM uptp

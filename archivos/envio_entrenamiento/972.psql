@@ -1,0 +1,4 @@
+CREATE TABLE article10 (
+    id int primary key,
+    nombre varchar(20)
+)

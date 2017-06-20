@@ -1,0 +1,45 @@
+s*{
+	border:1px solid #000;
+}
+#editor {
+        margin: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:400px;
+    }
+body{
+	background-color:#F8F8F8;
+	overflow-x: hidden;
+}
+.center{
+text-align: center;
+}
+.justificar{
+text-align: justify;
+}
+
+.container{
+background:#FFF;
+text-align:justify;
+}
+
+.a-blanco{
+	color:#ddd;
+}
+.a-blanco:hover{
+	color:#fff;
+}
+footer{
+text-align:center;
+
+}
+
+select.ui-datepicker-year,select.ui-datepicker-month{
+		color:#000;
+		
+}
+.form-control[readonly]{
+background-color:#FFF;
+}

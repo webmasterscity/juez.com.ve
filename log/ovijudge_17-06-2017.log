@@ -1,0 +1,73 @@
+17-06-2017 10:55:18 V-18671986 Servidor iniciado.
+17-06-2017 10:55:19 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d 5 -f archivos/envio_entrenamiento/1012.psql para la entrada :
+1
+17-06-2017 10:55:19 V-18671986 Verificando tiempo limite
+17-06-2017 10:55:19 V-18671986 COMPARANDO MEMORIA: >50000
+17-06-2017 10:55:19 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d 5 -f archivos/envio_entrenamiento/1012.psql
+ Resultado ejecucion: Resource id #14
+ Codigo: 2
+  output: 
+ memoria: psql: FATAL:  no existe la base de datos «5»
+ con explode: 
+ error con explode: psql: FATAL:  no existe la base de datos «5»
+ 
+17-06-2017 10:55:19 V-18671986 Tiempo limite verificado 
+17-06-2017 10:55:19 V-18671986 Resultado: 
+17-06-2017 10:55:19 V-18671986 listo
+17-06-2017 10:55:20 V-18671986 Comparando resultados: 
+ == Hola mundo!
+ En hexadecimal: 
+ == 486F6C61206D756E646F21
+17-06-2017 10:55:20 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+17-06-2017 10:56:12 V-18671986 Servidor iniciado.
+17-06-2017 10:56:13 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1013.psql para la entrada :
+1
+17-06-2017 10:56:13 V-18671986 Verificando tiempo limite
+17-06-2017 10:56:13 V-18671986 COMPARANDO MEMORIA: >50000
+17-06-2017 10:56:13 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1013.psql
+ Resultado ejecucion: Resource id #14
+ Codigo: 0
+  output: CREATE TABLE
+INSERT 0 1
+   nombre    
+-------------
+ Hola mundo!
+(1 row)
+
+
+ memoria:  con explode: 
+ error con explode:  
+17-06-2017 10:56:13 V-18671986 Tiempo limite verificado 
+17-06-2017 10:56:13 V-18671986 Resultado: Hola mundo!
+17-06-2017 10:56:13 V-18671986 listo
+17-06-2017 10:56:14 V-18671986 Comparando resultados: 
+Hola mundo! == Hola mundo!
+ En hexadecimal: 
+486F6C61206D756E646F21 == 486F6C61206D756E646F21
+17-06-2017 10:56:14 V-18671986 Sentencia: CORRECTO
+17-06-2017 10:58:22 V-18671986 Servidor iniciado.
+17-06-2017 10:58:23 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1014.psql para la entrada :
+1
+17-06-2017 10:58:23 V-18671986 Verificando tiempo limite
+17-06-2017 10:58:23 V-18671986 COMPARANDO MEMORIA: >50000
+17-06-2017 10:58:23 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1014.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: CREATE TABLE
+INSERT 0 1
+   nombre    
+-------------
+ Hola mundo!
+(1 row)
+
+
+ memoria:  con explode: 
+ error con explode:  
+17-06-2017 10:58:23 V-18671986 Tiempo limite verificado 
+17-06-2017 10:58:23 V-18671986 Resultado: Hola mundo!
+17-06-2017 10:58:23 V-18671986 listo
+17-06-2017 10:58:23 V-18671986 Comparando resultados: 
+Hola mundo! == Hola mundo!
+ En hexadecimal: 
+486F6C61206D756E646F21 == 486F6C61206D756E646F21
+17-06-2017 10:58:23 V-18671986 Sentencia: CORRECTO

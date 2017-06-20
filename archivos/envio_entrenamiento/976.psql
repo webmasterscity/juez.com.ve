@@ -1,0 +1,6 @@
+CREATE TABLE respuesta4(
+	solucion varchar(50)
+);
+INSERT INTO respuesta3 (solucion) VALUES ('Hola mundo!');
+SELECT solucion FROM respuesta3;
+

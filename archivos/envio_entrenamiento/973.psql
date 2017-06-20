@@ -1,0 +1,3 @@
+CREATE TABLE respuesta(
+	solucion varchar(50)
+)
