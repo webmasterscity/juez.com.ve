@@ -1,4 +1,5 @@
 <?php
+ini_set('memory_limit', '-1');
 //CREAMOS LA CLASE CON EL NOMBRE DB
 class db {
 //CREAMOS LOS ATRIBUTOS DE MANERA PRIVADA
@@ -78,7 +79,7 @@ class db {
 		$usu='NULL';
 		else
 		$usu=$_SESSION['cod_usuario'];
-		//$descripcion=$this->mysqli->real_escape_string($descripcion);
+		$descripcion=$this->mysqli->real_escape_string($descripcion);
 		$sql="INSERT INTO bitacora (evento,descripcion,cod_usuario) VALUES('".$evento."','".$descripcion."',".$usu.")";
 		
 		$this->ejecutar($sql);
