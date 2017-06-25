@@ -1,0 +1,126 @@
+24-06-2017 10:17:05 V-18671986 Servidor iniciado.
+24-06-2017 10:17:07 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1041.psql para la entrada :
+1
+24-06-2017 10:17:07 V-18671986 Verificando tiempo limite
+24-06-2017 10:17:08 V-18671986 COMPARANDO MEMORIA: >2000
+24-06-2017 10:17:08 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1041.psql
+ Resultado ejecucion: Resource id #17
+ Codigo: 0
+  output: 
+ memoria: psql:archivos/envio_entrenamiento/1041.psql:1: ERROR:  error de sintaxis en o cerca de «asdfas»
+LINE 1: asdfas
+        ^
+ con explode: 
+ error con explode: psql:archivos/envio_entrenamiento/1041.psql:1: ERROR:  error de sintaxis en o cerca de «asdfas»
+LINE 1: asdfas
+        ^
+ 
+24-06-2017 10:17:08 V-18671986 Tiempo limite verificado 
+24-06-2017 10:17:08 V-18671986 Resultado: 
+24-06-2017 10:17:08 V-18671986 listo
+24-06-2017 10:17:08 V-18671986 Comparando resultados: 
+ == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+ == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+24-06-2017 10:17:08 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+24-06-2017 10:20:09 V-18671986 Servidor iniciado.
+24-06-2017 10:20:10 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1042.psql para la entrada :
+1
+24-06-2017 10:20:10 V-18671986 Verificando tiempo limite
+24-06-2017 10:20:10 V-18671986 COMPARANDO MEMORIA: >2000
+24-06-2017 10:20:10 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1042.psql
+ Resultado ejecucion: Resource id #14
+ Codigo: 0
+  output: 
+ memoria: psql:archivos/envio_entrenamiento/1042.psql:1: ERROR:  error de sintaxis en o cerca de «asdfas»
+LINE 1: asdfas
+        ^
+ con explode: 
+ error con explode: psql:archivos/envio_entrenamiento/1042.psql:1: ERROR:  error de sintaxis en o cerca de «asdfas»
+LINE 1: asdfas
+        ^
+ 
+24-06-2017 10:20:10 V-18671986 Tiempo limite verificado 
+24-06-2017 10:20:10 V-18671986 Resultado: 
+24-06-2017 10:20:10 V-18671986 listo
+24-06-2017 10:20:10 V-18671986 Comparando resultados: 
+ == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+ == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+24-06-2017 10:20:10 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+24-06-2017 10:20:59 V-18671986 Servidor iniciado.
+24-06-2017 10:21:00 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1043.psql para la entrada :
+1
+24-06-2017 10:21:00 V-18671986 Verificando tiempo limite
+24-06-2017 10:21:00 V-18671986 COMPARANDO MEMORIA: >2000
+24-06-2017 10:21:00 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1043.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |  ocupacion  
+----------+----------+----------+-------------
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+24-06-2017 10:21:00 V-18671986 Tiempo limite verificado 
+24-06-2017 10:21:00 V-18671986 Resultado: 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+24-06-2017 10:21:00 V-18671986 listo
+24-06-2017 10:21:00 V-18671986 Comparando resultados: 
+18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261 == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+24-06-2017 10:21:00 V-18671986 Sentencia: CORRECTO
+24-06-2017 10:22:20 V-18671986 Servidor iniciado.
+24-06-2017 10:22:21 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1044.psql para la entrada :
+1
+24-06-2017 10:22:21 V-18671986 Verificando tiempo limite
+24-06-2017 10:22:21 V-18671986 COMPARANDO MEMORIA: >2000
+24-06-2017 10:22:21 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1044.psql
+ Resultado ejecucion: Resource id #14
+ Codigo: 0
+  output: CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |  ocupacion  
+----------+----------+----------+-------------
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+24-06-2017 10:22:21 V-18671986 Tiempo limite verificado 
+24-06-2017 10:22:21 V-18671986 Resultado: 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+24-06-2017 10:22:21 V-18671986 listo
+24-06-2017 10:22:21 V-18671986 Comparando resultados: 
+18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261 == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+24-06-2017 10:22:21 V-18671986 Sentencia: CORRECTO

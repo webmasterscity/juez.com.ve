@@ -1,4 +1,0 @@
-CREATE TABLE article9 (
-    article_id bigserial primary key,
-    respuesta varchar(20) NOT NULL,
-)

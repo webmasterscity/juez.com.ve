@@ -1,3 +1,0 @@
-CREATE TABLE a (nombre varchar(100))
-INSERT INTO a VALUES ('Hola mundo!')
-SELECT * FROM a

@@ -1,0 +1,1105 @@
+20-06-2017 05:49:19 V-18671986 Servidor iniciado.
+20-06-2017 05:49:23 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1015.psql para la entrada :
+1
+20-06-2017 05:49:23 V-18671986 Verificando tiempo limite
+20-06-2017 05:49:23 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 05:49:23 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1015.psql
+ Resultado ejecucion: Resource id #30
+ Codigo: 0
+  output: CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |  ocupacion  
+----------+----------+----------+-------------
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+20-06-2017 05:49:23 V-18671986 Tiempo limite verificado 
+20-06-2017 05:49:23 V-18671986 Resultado: 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+20-06-2017 05:49:23 V-18671986 listo
+20-06-2017 05:49:23 V-18671986 Comparando resultados: 
+18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora == 18671986	Leonardo	Melendez	Estudiante
+18164019	Jesus	Romero	Comerciante
+23580136	Adriana	Vizcaya	Diseñadora
+ En hexadecimal: 
+3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261 == 3138363731393836094C656F6E6172646F094D656C656E64657A09457374756469616E74650A3138313634303139094A6573757309526F6D65726F09436F6D65726369616E74650A32333538303133360941647269616E610956697A636179610944697365C3B161646F7261
+20-06-2017 05:49:24 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+20-06-2017 05:56:06 V-18671986 Servidor iniciado.
+20-06-2017 05:56:07 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1016.psql para la entrada :
+1
+20-06-2017 05:56:07 V-18671986 Verificando tiempo limite
+20-06-2017 05:56:07 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 05:56:07 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1016.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |  ocupacion  
+----------+----------+----------+-------------
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+20-06-2017 05:56:07 V-18671986 Tiempo limite verificado 
+20-06-2017 05:56:07 V-18671986 Resultado: 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+20-06-2017 05:56:07 V-18671986 listo
+20-06-2017 05:56:07 V-18671986 Comparando resultados: 
+18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora == 18671986 Leonardo Melendez Estudiante
+18164019 Jesus Romero Comerciante
+23580136 Adriana Vizcaya Diseñadora
+ En hexadecimal: 
+3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261 == 3138363731393836204C656F6E6172646F204D656C656E64657A20457374756469616E74650A3138313634303139204A6573757320526F6D65726F20436F6D65726369616E74650A32333538303133362041647269616E612056697A636179612044697365C3B161646F7261
+20-06-2017 05:56:07 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+20-06-2017 05:57:28 V-18671986 Servidor iniciado.
+20-06-2017 05:57:29 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1017.psql para la entrada :
+1
+20-06-2017 05:57:29 V-18671986 Verificando tiempo limite
+20-06-2017 05:57:29 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 05:57:29 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1017.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |  ocupacion  
+----------+----------+----------+-------------
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+20-06-2017 05:57:29 V-18671986 Tiempo limite verificado 
+20-06-2017 05:57:29 V-18671986 Resultado: 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+20-06-2017 05:57:29 V-18671986 listo
+20-06-2017 05:57:30 V-18671986 Comparando resultados: 
+18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261 == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 05:57:30 V-18671986 Sentencia: CORRECTO
+20-06-2017 05:58:24 V-18671986 Servidor iniciado.
+20-06-2017 05:58:25 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1018.psql para la entrada :
+1
+20-06-2017 05:58:25 V-18671986 Verificando tiempo limite
+20-06-2017 05:58:25 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 05:58:25 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1018.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |  ocupacion  
+----------+----------+----------+-------------
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+20-06-2017 05:58:25 V-18671986 Tiempo limite verificado 
+20-06-2017 05:58:25 V-18671986 Resultado: 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+20-06-2017 05:58:25 V-18671986 listo
+20-06-2017 05:58:26 V-18671986 Comparando resultados: 
+18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261 == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 05:58:26 V-18671986 Sentencia: CORRECTO
+20-06-2017 05:58:33 V-18671986 Servidor iniciado.
+20-06-2017 05:58:33 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1019.psql para la entrada :
+1
+20-06-2017 05:58:33 V-18671986 Verificando tiempo limite
+20-06-2017 05:58:34 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 05:58:34 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1019.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |  ocupacion  
+----------+----------+----------+-------------
+ 18671986 | Leonardo | Melendez | Estudiantea
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+20-06-2017 05:58:34 V-18671986 Tiempo limite verificado 
+20-06-2017 05:58:34 V-18671986 Resultado: 18671986 | Leonardo | Melendez | Estudiantea
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+20-06-2017 05:58:34 V-18671986 listo
+20-06-2017 05:58:34 V-18671986 Comparando resultados: 
+18671986 | Leonardo | Melendez | Estudiantea
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E7465610A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261 == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 05:58:34 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+20-06-2017 05:58:39 V-18671986 Servidor iniciado.
+20-06-2017 05:58:40 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1020.psql para la entrada :
+1
+20-06-2017 05:58:40 V-18671986 Verificando tiempo limite
+20-06-2017 05:58:40 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 05:58:40 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1020.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |  ocupacion  
+----------+----------+----------+-------------
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+20-06-2017 05:58:40 V-18671986 Tiempo limite verificado 
+20-06-2017 05:58:40 V-18671986 Resultado: 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+20-06-2017 05:58:40 V-18671986 listo
+20-06-2017 05:58:40 V-18671986 Comparando resultados: 
+18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261 == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 05:58:40 V-18671986 Sentencia: CORRECTO
+20-06-2017 06:03:59 V-18671986 Servidor iniciado.
+20-06-2017 06:03:59 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1021.psql para la entrada :
+1
+20-06-2017 06:03:59 V-18671986 Verificando tiempo limite
+20-06-2017 06:04:00 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 06:04:00 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1021.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: CREATE TABLE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |            persona             | descripcion 
+----------+----------+----------+--------------------------------+-------------
+ 18671986 | Leonardo | Melendez | (18671986,Leonardo,Melendez,1) | Estudiante
+ 18164019 | Jesus    | Romero   | (18164019,Jesus,Romero,2)      | Comerciante
+ 23580136 | Adriana  | Vizcaya  | (23580136,Adriana,Vizcaya,3)   | Diseñadora
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+20-06-2017 06:04:00 V-18671986 Tiempo limite verificado 
+20-06-2017 06:04:00 V-18671986 Resultado: 
+20-06-2017 06:04:00 V-18671986 listo
+20-06-2017 06:04:00 V-18671986 Comparando resultados: 
+ == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+ == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 06:04:00 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+20-06-2017 06:06:03 V-18671986 Servidor iniciado.
+20-06-2017 06:06:04 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1022.psql para la entrada :
+1
+20-06-2017 06:06:04 V-18671986 Verificando tiempo limite
+20-06-2017 06:06:05 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 06:06:05 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1022.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: CREATE TABLE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |            persona             | descripcion 
+----------+----------+----------+--------------------------------+-------------
+ 18671986 | Leonardo | Melendez | (18671986,Leonardo,Melendez,1) | Estudiante
+ 18164019 | Jesus    | Romero   | (18164019,Jesus,Romero,2)      | Comerciante
+ 23580136 | Adriana  | Vizcaya  | (23580136,Adriana,Vizcaya,3)   | Diseñadora
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+20-06-2017 06:06:05 V-18671986 Tiempo limite verificado 
+20-06-2017 06:06:05 V-18671986 Resultado: 
+20-06-2017 06:06:05 V-18671986 listo
+20-06-2017 06:06:05 V-18671986 Comparando resultados: 
+ == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+ == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 06:06:05 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+20-06-2017 06:06:13 V-18671986 Servidor iniciado.
+20-06-2017 06:06:14 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1023.psql para la entrada :
+1
+20-06-2017 06:06:14 V-18671986 Verificando tiempo limite
+20-06-2017 06:06:14 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 06:06:14 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1023.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: CREATE TABLE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |            persona             | descripcion 
+----------+----------+----------+--------------------------------+-------------
+ 18671986 | Leonardo | Melendez | (18671986,Leonardo,Melendez,1) | Estudiante
+ 23580136 | Adriana  | Vizcaya  | (23580136,Adriana,Vizcaya,2)   | Comerciante
+ 18164019 | Jesus    | Romero   | (18164019,Jesus,Romero,2)      | Comerciante
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+20-06-2017 06:06:14 V-18671986 Tiempo limite verificado 
+20-06-2017 06:06:14 V-18671986 Resultado: 
+20-06-2017 06:06:14 V-18671986 listo
+20-06-2017 06:06:14 V-18671986 Comparando resultados: 
+ == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+ == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 06:06:14 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+20-06-2017 06:06:58 V-18671986 Servidor iniciado.
+20-06-2017 06:06:59 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1024.psql para la entrada :
+1
+20-06-2017 06:06:59 V-18671986 Verificando tiempo limite
+20-06-2017 06:06:59 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 06:06:59 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1024.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: 
+ memoria: psql:archivos/envio_entrenamiento/1024.psql:2: ERROR:  error de sintaxis en o cerca de «,»
+LINE 1: ...rchar(100), apellido varchar(100),cod_ocupacion varchar(3)),
+                                                                      ^
+psql:archivos/envio_entrenamiento/1024.psql:3: ERROR:  no existe la relación «ocupacion»
+LINE 1: INSERT INTO ocupacion VALUES('1','Estudiante');
+                    ^
+psql:archivos/envio_entrenamiento/1024.psql:4: ERROR:  no existe la relación «ocupacion»
+LINE 1: INSERT INTO ocupacion VALUES('2','Comerciante');
+                    ^
+psql:archivos/envio_entrenamiento/1024.psql:5: ERROR:  no existe la relación «ocupacion»
+LINE 1: INSERT INTO ocupacion VALUES('3','Diseñadora');
+                    ^
+psql:archivos/envio_entrenamiento/1024.psql:6: ERROR:  no existe la relación «persona»
+LINE 1: INSERT INTO persona VALUES ('18671986','Leonardo', 'Melendez...
+                    ^
+psql:archivos/envio_entrenamiento/1024.psql:7: ERROR:  no existe la relación «persona»
+LINE 1: INSERT INTO persona VALUES ('18164019','Jesus', 'Romero','2'...
+                    ^
+psql:archivos/envio_entrenamiento/1024.psql:8: ERROR:  no existe la relación «persona»
+LINE 1: INSERT INTO persona VALUES ('23580136','Adriana', 'Vizcaya',...
+                    ^
+psql:archivos/envio_entrenamiento/1024.psql:9: ERROR:  no existe la relación «persona»
+LINE 1: ...ona.apellido, persona, ocupacion.descripcion FROM persona IN...
+                                                             ^
+ con explode: 
+ error con explode: psql:archivos/envio_entrenamiento/1024.psql:2: ERROR:  error de sintaxis en o cerca de «,»
+LINE 1: ...rchar(100), apellido varchar(100),cod_ocupacion varchar(3)),
+                                                                      ^
+psql:archivos/envio_entrenamiento/1024.psql:3: ERROR:  no existe la relación «ocupacion»
+LINE 1: INSERT INTO ocupacion VALUES('1','Estudiante');
+                    ^
+psql:archivos/envio_entrenamiento/1024.psql:4: ERROR:  no existe la relación «ocupacion»
+LINE 1: INSERT INTO ocupacion VALUES('2','Comerciante');
+                    ^
+psql:archivos/envio_entrenamiento/1024.psql:5: ERROR:  no existe la relación «ocupacion»
+LINE 1: INSERT INTO ocupacion VALUES('3','Diseñadora');
+                    ^
+psql:archivos/envio_entrenamiento/1024.psql:6: ERROR:  no existe la relación «persona»
+LINE 1: INSERT INTO persona VALUES ('18671986','Leonardo', 'Melendez...
+                    ^
+psql:archivos/envio_entrenamiento/1024.psql:7: ERROR:  no existe la relación «persona»
+LINE 1: INSERT INTO persona VALUES ('18164019','Jesus', 'Romero','2'...
+                    ^
+psql:archivos/envio_entrenamiento/1024.psql:8: ERROR:  no existe la relación «persona»
+LINE 1: INSERT INTO persona VALUES ('23580136','Adriana', 'Vizcaya',...
+                    ^
+psql:archivos/envio_entrenamiento/1024.psql:9: ERROR:  no existe la relación «persona»
+LINE 1: ...ona.apellido, persona, ocupacion.descripcion FROM persona IN...
+                                                             ^
+ 
+20-06-2017 06:06:59 V-18671986 Tiempo limite verificado 
+20-06-2017 06:06:59 V-18671986 Resultado: 
+20-06-2017 06:06:59 V-18671986 listo
+20-06-2017 06:06:59 V-18671986 Comparando resultados: 
+ == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+ == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 06:06:59 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+20-06-2017 06:08:30 V-18671986 Servidor iniciado.
+20-06-2017 06:08:31 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1025.psql para la entrada :
+1
+20-06-2017 06:08:31 V-18671986 Verificando tiempo limite
+20-06-2017 06:08:31 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 06:08:31 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1025.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: 
+ memoria: psql:archivos/envio_entrenamiento/1025.psql:2: ERROR:  error de sintaxis en o cerca de «/»
+LINE 1: ...char(100), apellido varchar(100),cod_ocupacion varchar(3)) /
+                                                                      ^
+psql:archivos/envio_entrenamiento/1025.psql:3: ERROR:  no existe la relación «ocupacion»
+LINE 1: INSERT INTO ocupacion VALUES('1','Estudiante');
+                    ^
+psql:archivos/envio_entrenamiento/1025.psql:4: ERROR:  no existe la relación «ocupacion»
+LINE 1: INSERT INTO ocupacion VALUES('2','Comerciante');
+                    ^
+psql:archivos/envio_entrenamiento/1025.psql:5: ERROR:  no existe la relación «ocupacion»
+LINE 1: INSERT INTO ocupacion VALUES('3','Diseñadora');
+                    ^
+psql:archivos/envio_entrenamiento/1025.psql:6: ERROR:  no existe la relación «persona»
+LINE 1: INSERT INTO persona VALUES ('18671986','Leonardo', 'Melendez...
+                    ^
+psql:archivos/envio_entrenamiento/1025.psql:7: ERROR:  no existe la relación «persona»
+LINE 1: INSERT INTO persona VALUES ('18164019','Jesus', 'Romero','2'...
+                    ^
+psql:archivos/envio_entrenamiento/1025.psql:8: ERROR:  no existe la relación «persona»
+LINE 1: INSERT INTO persona VALUES ('23580136','Adriana', 'Vizcaya',...
+                    ^
+psql:archivos/envio_entrenamiento/1025.psql:9: ERROR:  no existe la relación «persona»
+LINE 1: ...ona.apellido, persona, ocupacion.descripcion FROM persona IN...
+                                                             ^
+ con explode: 
+ error con explode: psql:archivos/envio_entrenamiento/1025.psql:2: ERROR:  error de sintaxis en o cerca de «/»
+LINE 1: ...char(100), apellido varchar(100),cod_ocupacion varchar(3)) /
+                                                                      ^
+psql:archivos/envio_entrenamiento/1025.psql:3: ERROR:  no existe la relación «ocupacion»
+LINE 1: INSERT INTO ocupacion VALUES('1','Estudiante');
+                    ^
+psql:archivos/envio_entrenamiento/1025.psql:4: ERROR:  no existe la relación «ocupacion»
+LINE 1: INSERT INTO ocupacion VALUES('2','Comerciante');
+                    ^
+psql:archivos/envio_entrenamiento/1025.psql:5: ERROR:  no existe la relación «ocupacion»
+LINE 1: INSERT INTO ocupacion VALUES('3','Diseñadora');
+                    ^
+psql:archivos/envio_entrenamiento/1025.psql:6: ERROR:  no existe la relación «persona»
+LINE 1: INSERT INTO persona VALUES ('18671986','Leonardo', 'Melendez...
+                    ^
+psql:archivos/envio_entrenamiento/1025.psql:7: ERROR:  no existe la relación «persona»
+LINE 1: INSERT INTO persona VALUES ('18164019','Jesus', 'Romero','2'...
+                    ^
+psql:archivos/envio_entrenamiento/1025.psql:8: ERROR:  no existe la relación «persona»
+LINE 1: INSERT INTO persona VALUES ('23580136','Adriana', 'Vizcaya',...
+                    ^
+psql:archivos/envio_entrenamiento/1025.psql:9: ERROR:  no existe la relación «persona»
+LINE 1: ...ona.apellido, persona, ocupacion.descripcion FROM persona IN...
+                                                             ^
+ 
+20-06-2017 06:08:31 V-18671986 Tiempo limite verificado 
+20-06-2017 06:08:31 V-18671986 Resultado: 
+20-06-2017 06:08:31 V-18671986 listo
+20-06-2017 06:08:31 V-18671986 Comparando resultados: 
+ == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+ == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 06:08:31 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+20-06-2017 06:08:57 V-18671986 Servidor iniciado.
+20-06-2017 06:08:58 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1026.psql para la entrada :
+1
+20-06-2017 06:08:58 V-18671986 Verificando tiempo limite
+20-06-2017 06:08:58 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 06:08:58 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1026.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: 
+ memoria: psql:archivos/envio_entrenamiento/1026.psql:2: ERROR:  error de sintaxis en o cerca de «/»
+LINE 1: ...rchar(100), apellido varchar(100),cod_ocupacion varchar(3))/
+                                                                      ^
+psql:archivos/envio_entrenamiento/1026.psql:3: ERROR:  no existe la relación «ocupacion»
+LINE 1: INSERT INTO ocupacion VALUES('1','Estudiante');
+                    ^
+psql:archivos/envio_entrenamiento/1026.psql:4: ERROR:  no existe la relación «ocupacion»
+LINE 1: INSERT INTO ocupacion VALUES('2','Comerciante');
+                    ^
+psql:archivos/envio_entrenamiento/1026.psql:5: ERROR:  no existe la relación «ocupacion»
+LINE 1: INSERT INTO ocupacion VALUES('3','Diseñadora');
+                    ^
+psql:archivos/envio_entrenamiento/1026.psql:6: ERROR:  no existe la relación «persona»
+LINE 1: INSERT INTO persona VALUES ('18671986','Leonardo', 'Melendez...
+                    ^
+psql:archivos/envio_entrenamiento/1026.psql:7: ERROR:  no existe la relación «persona»
+LINE 1: INSERT INTO persona VALUES ('18164019','Jesus', 'Romero','2'...
+                    ^
+psql:archivos/envio_entrenamiento/1026.psql:8: ERROR:  no existe la relación «persona»
+LINE 1: INSERT INTO persona VALUES ('23580136','Adriana', 'Vizcaya',...
+                    ^
+psql:archivos/envio_entrenamiento/1026.psql:9: ERROR:  no existe la relación «persona»
+LINE 1: ...ona.apellido, persona, ocupacion.descripcion FROM persona IN...
+                                                             ^
+ con explode: 
+ error con explode: psql:archivos/envio_entrenamiento/1026.psql:2: ERROR:  error de sintaxis en o cerca de «/»
+LINE 1: ...rchar(100), apellido varchar(100),cod_ocupacion varchar(3))/
+                                                                      ^
+psql:archivos/envio_entrenamiento/1026.psql:3: ERROR:  no existe la relación «ocupacion»
+LINE 1: INSERT INTO ocupacion VALUES('1','Estudiante');
+                    ^
+psql:archivos/envio_entrenamiento/1026.psql:4: ERROR:  no existe la relación «ocupacion»
+LINE 1: INSERT INTO ocupacion VALUES('2','Comerciante');
+                    ^
+psql:archivos/envio_entrenamiento/1026.psql:5: ERROR:  no existe la relación «ocupacion»
+LINE 1: INSERT INTO ocupacion VALUES('3','Diseñadora');
+                    ^
+psql:archivos/envio_entrenamiento/1026.psql:6: ERROR:  no existe la relación «persona»
+LINE 1: INSERT INTO persona VALUES ('18671986','Leonardo', 'Melendez...
+                    ^
+psql:archivos/envio_entrenamiento/1026.psql:7: ERROR:  no existe la relación «persona»
+LINE 1: INSERT INTO persona VALUES ('18164019','Jesus', 'Romero','2'...
+                    ^
+psql:archivos/envio_entrenamiento/1026.psql:8: ERROR:  no existe la relación «persona»
+LINE 1: INSERT INTO persona VALUES ('23580136','Adriana', 'Vizcaya',...
+                    ^
+psql:archivos/envio_entrenamiento/1026.psql:9: ERROR:  no existe la relación «persona»
+LINE 1: ...ona.apellido, persona, ocupacion.descripcion FROM persona IN...
+                                                             ^
+ 
+20-06-2017 06:08:58 V-18671986 Tiempo limite verificado 
+20-06-2017 06:08:58 V-18671986 Resultado: 
+20-06-2017 06:08:58 V-18671986 listo
+20-06-2017 06:08:59 V-18671986 Comparando resultados: 
+ == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+ == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 06:08:59 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+20-06-2017 06:09:19 V-18671986 Servidor iniciado.
+20-06-2017 06:09:20 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1027.psql para la entrada :
+1
+20-06-2017 06:09:20 V-18671986 Verificando tiempo limite
+20-06-2017 06:09:20 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 06:09:20 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1027.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: CREATE TABLE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |            persona             | descripcion 
+----------+----------+----------+--------------------------------+-------------
+ 18671986 | Leonardo | Melendez | (18671986,Leonardo,Melendez,1) | Estudiante
+ 18164019 | Jesus    | Romero   | (18164019,Jesus,Romero,2)      | Comerciante
+ 23580136 | Adriana  | Vizcaya  | (23580136,Adriana,Vizcaya,3)   | Diseñadora
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+20-06-2017 06:09:20 V-18671986 Tiempo limite verificado 
+20-06-2017 06:09:20 V-18671986 Resultado: 
+20-06-2017 06:09:20 V-18671986 listo
+20-06-2017 06:09:20 V-18671986 Comparando resultados: 
+ == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+ == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 06:09:20 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+20-06-2017 06:38:55 V-18671986 Servidor iniciado.
+20-06-2017 06:38:56 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1028.psql para la entrada :
+1
+20-06-2017 06:38:56 V-18671986 Verificando tiempo limite
+20-06-2017 06:38:56 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 06:38:56 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1028.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |  ocupacion  
+----------+----------+----------+-------------
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+20-06-2017 06:38:56 V-18671986 Tiempo limite verificado 
+20-06-2017 06:38:56 V-18671986 Resultado: 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+20-06-2017 06:38:56 V-18671986 listo
+20-06-2017 06:38:57 V-18671986 Comparando resultados: 
+18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261 == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 06:38:57 V-18671986 Sentencia: CORRECTO
+20-06-2017 06:59:18 V-18671986 Servidor iniciado.
+20-06-2017 06:59:18 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1029.psql para la entrada :
+1
+20-06-2017 06:59:18 V-18671986 Verificando tiempo limite
+20-06-2017 06:59:19 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 06:59:19 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1029.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido | ocupacion  
+----------+----------+----------+------------
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | C
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+20-06-2017 06:59:19 V-18671986 Tiempo limite verificado 
+20-06-2017 06:59:19 V-18671986 Resultado: 
+20-06-2017 06:59:19 V-18671986 listo
+20-06-2017 06:59:19 V-18671986 Comparando resultados: 
+ == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+ == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 06:59:19 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+20-06-2017 07:00:24 V-18671986 Servidor iniciado.
+20-06-2017 07:00:25 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1030.psql para la entrada :
+1
+20-06-2017 07:00:25 V-18671986 Verificando tiempo limite
+20-06-2017 07:00:25 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 07:00:25 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1030.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+
+ memoria:  con explode: 
+ error con explode:  
+20-06-2017 07:00:25 V-18671986 Tiempo limite verificado 
+20-06-2017 07:00:25 V-18671986 Resultado: 
+20-06-2017 07:00:25 V-18671986 listo
+20-06-2017 07:00:25 V-18671986 Comparando resultados: 
+ == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+ == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 07:00:25 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+20-06-2017 07:00:52 V-18671986 Servidor iniciado.
+20-06-2017 07:00:52 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1031.psql para la entrada :
+1
+20-06-2017 07:00:52 V-18671986 Verificando tiempo limite
+20-06-2017 07:00:53 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 07:00:53 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1031.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: 
+ memoria: psql:archivos/envio_entrenamiento/1031.psql:1: ERROR:  no existe la relación «persona»
+LINE 1: SELECT * FROM persona;
+                      ^
+ con explode: 
+ error con explode: psql:archivos/envio_entrenamiento/1031.psql:1: ERROR:  no existe la relación «persona»
+LINE 1: SELECT * FROM persona;
+                      ^
+ 
+20-06-2017 07:00:53 V-18671986 Tiempo limite verificado 
+20-06-2017 07:00:53 V-18671986 Resultado: 
+20-06-2017 07:00:53 V-18671986 listo
+20-06-2017 07:00:53 V-18671986 Comparando resultados: 
+ == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+ == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 07:00:53 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+20-06-2017 07:02:38 V-18671986 Servidor iniciado.
+20-06-2017 07:02:39 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1032.psql para la entrada :
+1
+20-06-2017 07:02:39 V-18671986 Verificando tiempo limite
+20-06-2017 07:02:39 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 07:02:39 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1032.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |  ocupacion  
+----------+----------+----------+-------------
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+20-06-2017 07:02:39 V-18671986 Tiempo limite verificado 
+20-06-2017 07:02:39 V-18671986 Resultado: 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+20-06-2017 07:02:39 V-18671986 listo
+20-06-2017 07:02:39 V-18671986 Comparando resultados: 
+18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261 == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 07:02:39 V-18671986 Sentencia: CORRECTO
+20-06-2017 07:05:35 V-18671986 Servidor iniciado.
+20-06-2017 07:05:35 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1033.psql para la entrada :
+1
+20-06-2017 07:05:35 V-18671986 Verificando tiempo limite
+20-06-2017 07:05:36 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 07:05:36 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1033.psql
+ Resultado ejecucion: Resource id #14
+ Codigo: 0
+  output: CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |  ocupacion  
+----------+----------+----------+-------------
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+20-06-2017 07:05:36 V-18671986 Tiempo limite verificado 
+20-06-2017 07:05:36 V-18671986 Resultado: 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+20-06-2017 07:05:36 V-18671986 listo
+20-06-2017 07:05:36 V-18671986 Comparando resultados: 
+18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261 == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 07:05:36 V-18671986 Sentencia: CORRECTO
+20-06-2017 07:06:01 V-18671986 Servidor iniciado.
+20-06-2017 07:06:01 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1034.psql para la entrada :
+1
+20-06-2017 07:06:01 V-18671986 Verificando tiempo limite
+20-06-2017 07:06:01 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 07:06:01 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1034.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |  ocupacion  
+----------+----------+----------+-------------
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(6 rows)
+
+
+ memoria: psql:archivos/envio_entrenamiento/1034.psql:1: ERROR:  la relación «persona» ya existe
+ con explode: 
+ error con explode: psql:archivos/envio_entrenamiento/1034.psql:1: ERROR:  la relación «persona» ya existe
+ 
+20-06-2017 07:06:01 V-18671986 Tiempo limite verificado 
+20-06-2017 07:06:01 V-18671986 Resultado: 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+20-06-2017 07:06:01 V-18671986 listo
+20-06-2017 07:06:01 V-18671986 Comparando resultados: 
+18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F72610A203138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261 == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 07:06:01 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+20-06-2017 07:09:47 V-18671986 Servidor iniciado.
+20-06-2017 07:09:47 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1035.psql para la entrada :
+1
+20-06-2017 07:09:47 V-18671986 Verificando tiempo limite
+20-06-2017 07:09:47 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 07:09:47 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1035.psql
+ Resultado ejecucion: Resource id #14
+ Codigo: 0
+  output: INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |  ocupacion  
+----------+----------+----------+-------------
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(9 rows)
+
+
+ memoria: psql:archivos/envio_entrenamiento/1035.psql:1: ERROR:  la relación «persona» ya existe
+ con explode: 
+ error con explode: psql:archivos/envio_entrenamiento/1035.psql:1: ERROR:  la relación «persona» ya existe
+ 
+20-06-2017 07:09:47 V-18671986 Tiempo limite verificado 
+20-06-2017 07:09:47 V-18671986 Resultado: 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+20-06-2017 07:09:47 V-18671986 listo
+20-06-2017 07:09:52 V-18671986 Comparando resultados: 
+18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F72610A203138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F72610A203138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261 == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 07:09:52 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+20-06-2017 07:10:26 V-18671986 Servidor iniciado.
+20-06-2017 07:10:26 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1036.psql para la entrada :
+1
+20-06-2017 07:10:26 V-18671986 Verificando tiempo limite
+20-06-2017 07:10:26 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 07:10:26 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1036.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |  ocupacion  
+----------+----------+----------+-------------
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(12 rows)
+
+
+ memoria: psql:archivos/envio_entrenamiento/1036.psql:1: ERROR:  la relación «persona» ya existe
+ con explode: 
+ error con explode: psql:archivos/envio_entrenamiento/1036.psql:1: ERROR:  la relación «persona» ya existe
+ 
+20-06-2017 07:10:26 V-18671986 Tiempo limite verificado 
+20-06-2017 07:10:26 V-18671986 Resultado: 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+20-06-2017 07:10:26 V-18671986 listo
+20-06-2017 07:10:32 V-18671986 Comparando resultados: 
+18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F72610A203138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F72610A203138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F72610A203138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261 == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 07:10:32 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+20-06-2017 07:11:05 V-18671986 Servidor iniciado.
+20-06-2017 07:11:05 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1037.psql para la entrada :
+1
+20-06-2017 07:11:05 V-18671986 Verificando tiempo limite
+20-06-2017 07:11:05 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 07:11:05 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1037.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |  ocupacion  
+----------+----------+----------+-------------
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(15 rows)
+
+
+ memoria: psql:archivos/envio_entrenamiento/1037.psql:1: ERROR:  la relación «persona» ya existe
+ con explode: 
+ error con explode: psql:archivos/envio_entrenamiento/1037.psql:1: ERROR:  la relación «persona» ya existe
+ 
+20-06-2017 07:11:05 V-18671986 Tiempo limite verificado 
+20-06-2017 07:11:05 V-18671986 Resultado: 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+20-06-2017 07:11:05 V-18671986 listo
+20-06-2017 07:11:06 V-18671986 Comparando resultados: 
+18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F72610A203138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F72610A203138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F72610A203138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F72610A203138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261 == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 07:11:06 V-18671986 Sentencia: RESPUESTA INCORRECTA 
+20-06-2017 07:11:18 V-18671986 Servidor iniciado.
+20-06-2017 07:11:19 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1038.psql para la entrada :
+1
+20-06-2017 07:11:19 V-18671986 Verificando tiempo limite
+20-06-2017 07:11:19 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 07:11:19 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1038.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |  ocupacion  
+----------+----------+----------+-------------
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+20-06-2017 07:11:19 V-18671986 Tiempo limite verificado 
+20-06-2017 07:11:19 V-18671986 Resultado: 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+20-06-2017 07:11:19 V-18671986 listo
+20-06-2017 07:11:20 V-18671986 Comparando resultados: 
+18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261 == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 07:11:20 V-18671986 Sentencia: CORRECTO
+20-06-2017 07:11:29 V-18671986 Servidor iniciado.
+20-06-2017 07:11:30 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1039.psql para la entrada :
+1
+20-06-2017 07:11:30 V-18671986 Verificando tiempo limite
+20-06-2017 07:11:30 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 07:11:30 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1039.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |  ocupacion  
+----------+----------+----------+-------------
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+20-06-2017 07:11:30 V-18671986 Tiempo limite verificado 
+20-06-2017 07:11:30 V-18671986 Resultado: 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+20-06-2017 07:11:30 V-18671986 listo
+20-06-2017 07:11:30 V-18671986 Comparando resultados: 
+18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261 == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 07:11:30 V-18671986 Sentencia: CORRECTO
+20-06-2017 07:11:33 V-18671986 Servidor iniciado.
+20-06-2017 07:11:34 V-18671986 Ejecutando PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1040.psql para la entrada :
+1
+20-06-2017 07:11:34 V-18671986 Verificando tiempo limite
+20-06-2017 07:11:34 V-18671986 COMPARANDO MEMORIA: >2000
+20-06-2017 07:11:34 V-18671986 DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:CMD: PGPASSWORD=20 psql -U leo -d usuario_5 -f archivos/envio_entrenamiento/1040.psql
+ Resultado ejecucion: Resource id #13
+ Codigo: 0
+  output: CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+  cedula  |  nombre  | apellido |  ocupacion  
+----------+----------+----------+-------------
+ 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+(3 rows)
+
+
+ memoria:  con explode: 
+ error con explode:  
+20-06-2017 07:11:34 V-18671986 Tiempo limite verificado 
+20-06-2017 07:11:34 V-18671986 Resultado: 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+20-06-2017 07:11:34 V-18671986 listo
+20-06-2017 07:11:34 V-18671986 Comparando resultados: 
+18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora == 18671986 | Leonardo | Melendez | Estudiante
+ 18164019 | Jesus    | Romero   | Comerciante
+ 23580136 | Adriana  | Vizcaya  | Diseñadora
+ En hexadecimal: 
+3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261 == 3138363731393836207C204C656F6E6172646F207C204D656C656E64657A207C20457374756469616E74650A203138313634303139207C204A65737573202020207C20526F6D65726F2020207C20436F6D65726369616E74650A203233353830313336207C2041647269616E6120207C2056697A6361796120207C2044697365C3B161646F7261
+20-06-2017 07:11:34 V-18671986 Sentencia: CORRECTO

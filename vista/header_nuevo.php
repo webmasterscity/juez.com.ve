@@ -13,11 +13,6 @@
 
     <!--Loading style-->
     <link type="text/css" rel="stylesheet" href="css/themes/style1/<?php echo $_SESSION['tema']; ?>" id="theme-change" class="style-change color-change">
-   
-    
-    <script src="js/jquery-1.10.2.min.js"></script>
-	<script src="js/jquery-migrate-1.2.1.min.js"></script>
-	
 	
     <!--CARGAR STILO NOTIFICACIONES-->
 	<script type="text/javascript" src="libreria/combinado.js.php"></script>
@@ -43,7 +38,7 @@ echo ocultar_menu();
         <nav id="topbar" role="navigation" style="margin-bottom: 0;" data-step="3" data-intro="&lt;b&gt;Topbar&lt;/b&gt; has other styles with live demo. Go to &lt;b&gt;Layouts-&gt;Header&amp;Topbar&lt;/b&gt; and check it out." class="navbar navbar-default navbar-static-top">
             <div class="navbar-header">
                 <button type="button" data-toggle="collapse" data-target=".sidebar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a id="logo" href="index.php" class="navbar-brand"><span class="fa fa-rocket"></span><span class="logo-text-icon"><img style="margin-top:-12px ;height:45px" src="images/logo_ovi.fw.png"></span></a></div>
+                <a id="logo" href="index.php" class="navbar-brand"><span class="fa fa-rocket"></span><span class="logo-text-icon"><img style="margin-top:-12px ;height:45px" src="images/logo_ovi.opt.png"></span></a></div>
             <div class="topbar-main"><a id="menu-toggle" href="#" class="hidden-xs"><i class="fa fa-bars"></i></a>
 
 

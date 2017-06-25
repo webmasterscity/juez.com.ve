@@ -1,4 +1,0 @@
-CREATE TABLE article9 (
-    respuesta varchar(20) NOT NULL,
-);
-

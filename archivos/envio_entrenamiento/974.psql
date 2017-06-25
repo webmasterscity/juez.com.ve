@@ -1,4 +1,0 @@
-CREATE TABLE respuesta2(
-	solucion varchar(50)
-);
-

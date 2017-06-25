@@ -29,6 +29,7 @@
 			fclose($fp);
 			$input_output=input_output($cod_problema);
 			$resultado=proceso_de_lenguaje($comando,$url,$archivo,$cod_envio,$input_output,$codigo_fuente,$limite_memoria,$limite_tiempo);
+			eliminar_archivo($url.$archivo);
 			error_log(date("d-m-Y h:i:s")." ".$_SESSION['cedula']." Sentencia: ".$resultado."\n", 3, $GLOBALS['dir_log']);
 		}
 	}elseif($concurso){
@@ -256,6 +257,7 @@ function proceso_de_lenguaje($comando,$url,$archivo,$cod_envio,$input_output,$co
 				$comando="PGPASSWORD=20 psql -U leo -d usuario_".$_SESSION['cod_usuario']." -f ".$url.$archivo;
 				$row= ejecutar_sql($comando,$input_output['input'],$cod_envio,$limite_memoria,$limite_tiempo);
 				eliminar_db_psql();
+				
 				$resultado= resultado($row,$input_output['output'],$cod_envio);
 				
 			}
@@ -435,6 +437,9 @@ function crear_db_psql(){
 	}	
 function eliminar_db_psql(){
 		shell_exec("PGPASSWORD=20 psql -U leo -c 'DROP DATABASE usuario_".$_SESSION['cod_usuario']."'");
+	}	
+function eliminar_archivo($archivo){
+		shell_exec("rm ".$archivo);
 	}	
 
 ?>

@@ -1,5 +1,0 @@
-CREATE TABLE respuesta3(
-	solucion varchar(50)
-);
-INSERT INTO respuesta3 (solucion) VALUES ('Hola mundo!');
-
