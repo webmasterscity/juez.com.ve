@@ -13,24 +13,13 @@
 <script src="libreria/iCheck/icheck.min.js"></script>
 <script src="libreria/iCheck/custom.min.js"></script>
 <script type="text/javascript" src="js/jquery.menu.js.php"></script>
-
-<script src="libreria/flot-chart/jquery.flot.js"></script>
-<script src="libreria/flot-chart/jquery.flot.categories.js"></script>
-<script src="libreria/flot-chart/jquery.flot.pie.js"></script>
-<script src="libreria/flot-chart/jquery.flot.tooltip.js"></script>
-<script src="libreria/flot-chart/jquery.flot.resize.js"></script>
-<script src="libreria/flot-chart/jquery.flot.fillbetween.js"></script>
-<script src="libreria/flot-chart/jquery.flot.stack.js"></script>
-<script src="libreria/flot-chart/jquery.flot.spline.js"></script>
+<script type="text/javascript" src="libreria/flot-chart/combinado_flot.js.php"></script>
 <script src="libreria/calendar/zabuto_calendar.min.js"></script>
 
 <script src="js/index.js"></script>
 <!--Cargar notificaciones-->
-
-
 <!--CORE JAVASCRIPT-->
 <script src="js/main.js"></script>
-
 <!--
 <script>(function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
