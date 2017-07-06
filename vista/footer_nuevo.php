@@ -1,4 +1,3 @@
-
        <!--BEGIN FOOTER-->
             <div id="footer" >
                 <div class="copyright">Olimpiada Venezolana de Informática, Sistema de Entrenamiento Para Competencias Internaciónales de Programación 2017.</div>
@@ -10,19 +9,10 @@
 
 <!--loading bootstrap js-->
 <script src="libreria/bootstrap/js/bootstrap.min.js"></script>
-<script src="libreria/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
-<script src="js/html5shiv.js"></script>
-<script src="js/respond.min.js"></script>
-<script src="libreria/metisMenu/jquery.metisMenu.js"></script>
-<script src="libreria/slimScroll/jquery.slimscroll.js"></script>
-<script src="libreria/jquery-cookie/jquery.cookie.js"></script>
+<script type="text/javascript" src="libreria/combinado_footer.js.php"></script>
 <script src="libreria/iCheck/icheck.min.js"></script>
 <script src="libreria/iCheck/custom.min.js"></script>
-<script src="libreria/jquery-news-ticker/jquery.news-ticker.js"></script>
 <script type="text/javascript" src="js/jquery.menu.js.php"></script>
-<script src="libreria/jquery-pace/pace.min.js"></script>
-<script src="libreria/holder/holder.js"></script>
-<script src="libreria/responsive-tabs/responsive-tabs.js"></script>
 
 <script src="libreria/flot-chart/jquery.flot.js"></script>
 <script src="libreria/flot-chart/jquery.flot.categories.js"></script>
