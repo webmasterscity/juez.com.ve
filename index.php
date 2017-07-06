@@ -5,7 +5,7 @@ session_start();
 date_default_timezone_set("America/Manaus"); 
 //echo date('h:i:s',time());
 //echo phpinfo();
-//header("Expires: Sat, 26 Jul 2018 05:00:00 GMT");
+header("Expires: Sat, 26 Jul 2018 05:00:00 GMT");
 //$_SESSION['cod_tipo_usuario']="";
 //INCLUYE FUNCIONES GENERALES QUE SE PUEDEN UTILIZAR EN DISTINTAS PARTES DEL SISTEMA
 
