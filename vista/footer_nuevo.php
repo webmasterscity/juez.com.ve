@@ -22,7 +22,7 @@
 <script src="js/index.js"></script>
 <!--Cargar notificaciones-->
 <!--CORE JAVASCRIPT-->
-<script src="js/main.js"></script>
+<script src="js/main_min.js"></script>
 <!--
 <script>(function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
