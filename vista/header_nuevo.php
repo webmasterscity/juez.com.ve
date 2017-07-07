@@ -14,12 +14,7 @@
     <!--Loading style-->
     <link type="text/css" rel="stylesheet" href="css/themes/style1/<?php echo $_SESSION['tema']; ?>" id="theme-change" class="style-change color-change">
 	
-    <!--CARGAR STILO NOTIFICACIONES-->
-	<script type="text/javascript" src="libreria/combinado.js.php"></script>
-	<script type="text/javascript" src="libreria/bootstrap-3.3.6/js/bootbox.min.js"></script>
-	<!-- calendario con hora -->
-	<script type="text/javascript" src="libreria/datepicker_master/js/moment.js"></script>
-	<script type="text/javascript" src="libreria/datepicker_master/js/bootstrap-datetimepicker.min.js"></script>
+
 
 
 </head>
