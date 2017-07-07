@@ -141,13 +141,13 @@ function carrusel(){
 					</ol>
 					<div class="carousel-inner">
 						<div class="item active">
-							<img src="images/img1.jpg">
+							<img src="images/img1.png">
 						</div>
 						<div class="item">
-							<img src="images/img2.jpg">
+							<img src="images/img2.png">
 						</div>
 						<div class="item">
-						  <img src="images/img3.jpg" >
+						  <img src="images/img3.png" >
 						</div>
 					</div>
 					 <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>

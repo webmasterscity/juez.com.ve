@@ -14,6 +14,8 @@
     <!--Loading style-->
     <link type="text/css" rel="stylesheet" href="css/themes/style1/<?php echo $_SESSION['tema']; ?>" id="theme-change" class="style-change color-change">
 	
+<!--CARGAR STILO NOTIFICACIONES-->
+<script type="text/javascript" src="libreria/combinado.js.php"></script>
 
 
 

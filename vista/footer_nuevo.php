@@ -6,8 +6,6 @@
         <!--END PAGE WRAPPER--></div>
 </div>
 
-<!--CARGAR STILO NOTIFICACIONES-->
-<script type="text/javascript" src="libreria/combinado.js.php"></script>
 <script type="text/javascript" src="libreria/bootstrap-3.3.6/js/bootbox.min.js"></script>
 <!-- calendario con hora -->
 <script type="text/javascript" src="libreria/datepicker_master/js/moment.js"></script>
