@@ -8,6 +8,7 @@
 				  autoClose: true,
 					scrollX: true,
 					lengthChange: false,
+					"order": [[ 0, "desc" ]],
 					lengthMenu: [
 					
 						[ 10, 25, 50, -1 ],

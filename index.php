@@ -58,9 +58,9 @@ if(!$_GET['vista'] and !$_SESSION['login']){
 	$vista="intranet";
 }
 //INCLUIMOS EL CONTROLADOR DE LA PAGINA SOLICITADA
-
+$titulo_arriba= titulo_arriba($vista); 
 if(file_exists("control/control_".$vista.".php")){
-	$titulo_arriba= titulo_arriba($vista); 
+	
 include_once("control/control_".$vista.".php");
 }
 verificar_clave_default();

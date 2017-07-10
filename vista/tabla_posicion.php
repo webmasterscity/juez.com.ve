@@ -8,7 +8,7 @@ function tabla_posicion(){
 			
 <div class="panel panel-default">
 			<div class="panel-heading center">
-					'.$_SESSION['nombre_vista'].'
+					'.($_SESSION['nombre_vista'] ? $_SESSION['nombre_vista'] : $_SESSION['nombre_servicio']).'
 			</div>
 			<div class="panel-body">
 				<table id="data_table" class="table table-striped table-bordered"  width="100%" cellspacing="0">

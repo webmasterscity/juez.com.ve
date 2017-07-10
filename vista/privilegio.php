@@ -8,7 +8,7 @@
 					<a <?php if($_GET['evento']=='nuevo') echo 'style="display:none;"';?> title="Agregar nuevo registro" class="btn btn-success btn-sm" href="?<?php echo codificar('vista=privilegio&evento=nuevo'); ?>">Agregar Privilegios de usuarios</a>
 		</div>
 		<div class="col-xs-3 col-md-4" style="text-align:center">		
-			<span style="font-size:18px">Privilegios de usuarios</span>	
+			<span style="font-size:18px"><?php echo $_SESSION['nombre_vista']; ?></span>	
 		</div>
 		<div class="col-xs-5 col-md-4"  style="text-align:right">			
 			<div style="float:right; margin-top:-4px; <?php if($_GET['evento']=='nuevo' || $_POST['evento']=='consultar') echo 'display:none;';?>" >

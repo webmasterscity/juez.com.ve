@@ -4,10 +4,10 @@
 		
 		public function reporte_html_individual(){
 			parent::consultar();
-		$titulo='Rol de Usuarios';
+		$titulo=$_SESSION['nombre_vista'];
 		$html.='
 		<form method="post" action="?'.codificar('vista=tipo_usuario').'">
-		<script type="text/javascript" src="js/js_tipo_usuario.js" ></script>
+		
 			<div class="panel panel-default">
 			<div class="panel-heading">
 				<div class="row">
@@ -62,6 +62,7 @@
 		
 		$html.='
 		<form method="post" action="?'.codificar('vista=tipo_usuario').'">
+		
 		<script type="text/javascript" src="js/js_tipo_usuario.js" ></script>
 			<div class="panel panel-default">
 			<div class="panel-heading">

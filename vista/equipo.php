@@ -250,7 +250,19 @@ class vista_equipo extends campo_equipo{
 		$det_usuario_equipo->consulta_por('cod_equipo');
 
 		while($row=$det_usuario_equipo->row()){
-			$html.='<tr><td></td><td>'.$row['cedula'].'</td><td>'.$row['nombre'].'</td><td>'.$row['apellido'].'</td></tr>';
+			$direccion_perfil='index.php?'.codificar('vista=mi_perfil&evento=dato_personal_html&cod='.$row['cod_usuario']);
+			if($row['foto_perfil_peque']){
+				$foto=$row['foto_perfil_peque'];
+			}else{
+				$foto='chat/admin/images/img-no-avatar.gif';
+			}
+			$html.='
+			<tr>
+				<td><a href="'.$direccion_perfil.'"> <img style="width:32px;height: 32px;" src="'.$foto.'"/></a></td>
+				<td> '.$row['cedula'].'</td>
+				<td>'.$row['nombre'].'</td>
+				<td>'.$row['apellido'].'</td>
+			</tr>';
 			$js.='addRow("'.$row['cod_usuario'].'","'.$row['nombre'].'","'.$row['apellido'].'","'.$row['cedula'].'");';
 			$rows[]=$row;
 		}
@@ -267,7 +279,7 @@ class vista_equipo extends campo_equipo{
 		$html.='<br><table class="table table-striped" id="tabla_detalle">
 					<thead>
 					<tr >
-						<th></th>
+						<th class="center">Foto Perfil</th>
 						<th class="center">Cedula</th>
 						<th class="center">Nombre</th>
 						<th class="center">Apellido</th>

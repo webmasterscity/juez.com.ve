@@ -1,6 +1,5 @@
-
-
 <?php
+$lib_data_table=true;
 echo '
 <div class="panel panel-default">
 			<div class="panel-heading center">
@@ -44,12 +43,25 @@ function ultimos_concursos(){
 			$td.='<td>'.$estatus.'</td>';
 			$td.='</tr>';
 		}
-		$html='<table class="table table-striped" style="font-size:13px"><tr>
-			<th>Cód.</th>
-			<th>Inicio</th>
-			<th>Nombre</th>
-			<th>Estatus</th>
-		</tr>'.$td.'</table>';		
+		
+		$html='
+			<script>
+			var sub_titulo_pdf="Tabla de posiciones";
+			</script>
+		<script type="text/javascript" src="libreria/js_listado_general.js"></script>
+		<table  id="data_table" class="table table-striped table-bordered" width="100%" cellspacing="0">
+			<thead>
+				<tr>
+						<th>Cód.</th>
+						<th>Inicio</th>
+						<th>Nombre</th>
+						<th>Estatus</th>
+				</tr>
+			</thead>
+			<tbody>				
+			'.$td.'
+			</tbody>
+			</table>';		
 		return $html;
 	
 }

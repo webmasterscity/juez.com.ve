@@ -20,7 +20,7 @@ class vista_sistema_b extends campo_vista_sistema{
 					'.mostrar_btn($_SESSION['cod_tipo_usuario'],$vista,$parametro).'					
 					</div>		
 					<div class="col-md-4" style="text-align:center">
-					<span style="font-size:18px"><span class="glyphicon glyphicon-user"></span> Vistas del sistema</span>					
+					<span style="font-size:18px"><span class="glyphicon glyphicon-user"></span>'.$_SESSION['nombre_vista'].'</span>					
 					</div>
 				</div>		
 			</div>

@@ -605,6 +605,7 @@ function foto_perfil_peque($cedula){
 	}
 
 function titulo_arriba($vista){
+
 	$cod_vista_sistema=$_SESSION['cod_vista_'.$vista];
 	
 	require_once("modelo/class_vista_sistema.php");
@@ -626,6 +627,7 @@ function titulo_arriba($vista){
                 <div class="clearfix"></div>
             </div>';
             $_SESSION['nombre_vista']=ucwords($vista_sistema->descripcion);
+
            
             return $html;
 	
