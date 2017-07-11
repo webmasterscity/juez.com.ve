@@ -59,12 +59,12 @@
 			
 		}
 		public function fecha_nacimiento($bloquear){
-			return '<div class="col-md-3">
+			return '<div class="col-md-3 ">
 				
 						<label>
 						Fecha de nacimiento <span style="color:red" title="Campo obligatorio">(*)</span>
 					</label>
-					<input onkeypress="return false" required pattern="^(?:(?:0?[1-9]|1\d|2[0-8])(\/|-)(?:0?[1-9]|1[0-2]))(\/|-)(?:[1-9]\d\d\d|\d[1-9]\d\d|\d\d[1-9]\d|\d\d\d[1-9])$|^(?:(?:31(\/|-)(?:0?[13578]|1[02]))|(?:(?:29|30)(\/|-)(?:0?[1,3-9]|1[0-2])))(\/|-)(?:[1-9]\d\d\d|\d[1-9]\d\d|\d\d[1-9]\d|\d\d\d[1-9])$|^(29(\/|-)0?2)(\/|-)(?:(?:0[48]00|[13579][26]00|[2468][048]00)|(?:\d\d)?(?:0[48]|[2468][048]|[13579][26]))$" id="fecha_nacimiento" title="Ingrese una fecha valida con formato (dd-mm-yyyy)" class="form-control"  type="text" onkeyup="this.value=this.value.toUpperCase()" name="fecha_nacimiento" value="'.($this->fecha_nacimiento ? date("d-m-Y",strtotime($this->fecha_nacimiento)) : "").'" />
+					<input onkeypress="return false" required pattern="^(?:(?:0?[1-9]|1\d|2[0-8])(\/|-)(?:0?[1-9]|1[0-2]))(\/|-)(?:[1-9]\d\d\d|\d[1-9]\d\d|\d\d[1-9]\d|\d\d\d[1-9])$|^(?:(?:31(\/|-)(?:0?[13578]|1[02]))|(?:(?:29|30)(\/|-)(?:0?[1,3-9]|1[0-2])))(\/|-)(?:[1-9]\d\d\d|\d[1-9]\d\d|\d\d[1-9]\d|\d\d\d[1-9])$|^(29(\/|-)0?2)(\/|-)(?:(?:0[48]00|[13579][26]00|[2468][048]00)|(?:\d\d)?(?:0[48]|[2468][048]|[13579][26]))$" id="fecha_nacimiento" title="Ingrese una fecha valida con formato (dd-mm-yyyy)" class="form-control "  type="text" onkeyup="this.value=this.value.toUpperCase()" name="fecha_nacimiento" value="'.($this->fecha_nacimiento ? date("d-m-Y",strtotime($this->fecha_nacimiento)) : "").'" />
 				
 				</div>';
 		}

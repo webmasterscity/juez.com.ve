@@ -48,7 +48,7 @@ function ultimos_concursos(){
 			<script>
 			var sub_titulo_pdf="Tabla de posiciones";
 			</script>
-		<script type="text/javascript" src="libreria/js_listado_general.js"></script>
+		<script type="text/javascript" src="libreria/js_listado_general_desc.js"></script>
 		<table  id="data_table" class="table table-striped table-bordered" width="100%" cellspacing="0">
 			<thead>
 				<tr>

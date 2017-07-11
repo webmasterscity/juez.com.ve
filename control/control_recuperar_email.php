@@ -3,7 +3,7 @@
 	$correo=filter_var($_POST['correo'],FILTER_SANITIZE_EMAIL);
 	$nueva_clave=rand(10000,99999);
 	$para		=$correo;
-	$de			='serenos.acarigua@gmail.com';
+	$de			='ovijudge@gmail.com';
 	$asunto		=htmlspecialchars('Nueva clave de acceso.', ENT_QUOTES);
 	$mensaje	=htmlspecialchars('Su nueva clave para el acceso al sistema es: '.$nueva_clave.' por medidas de seguridad le recomendamos cambiarla inmediatamente.', ENT_QUOTES);
 	$nombre		=htmlspecialchars('OVIJUDGE.', ENT_QUOTES);
@@ -100,9 +100,9 @@ function enviar_correo($para,$de,$telefono,$asunto,$mensaje,$nombre,$nueva_clave
 			//Whether to use SMTP authentication
 			$mail->SMTPAuth   = true;
 			//Username to use for SMTP authentication - use full email address for gmail
-			$mail->Username   = "serenos.acarigua@gmail.com";
+			$mail->Username   = "ovijudge@gmail.com";
 			//Password to use for SMTP authentication
-			$mail->Password   = "14032002";
+			$mail->Password   = "-dS0082ds";
 			//Set who the message is to be sent from
 			$mail->SetFrom($de, $nombre);
 			$mail->From = $de; 
@@ -126,7 +126,7 @@ function enviar_correo($para,$de,$telefono,$asunto,$mensaje,$nombre,$nueva_clave
 				//CODIGO DE RROR
 				$RR=$mail->ErrorInfo;
 				//---
-			  $msj_antes= "Su clave ha sido cambiada correctamente, aunque momentaneamente no podemos enviarsela por correo, por favor tome nota de su nueva clave que es: ".$nueva_clave;
+			  $msj_antes= "Su clave ha sido cambiada correctamente, aunque momentaneamente no podemos enviarsela por correo, por favor tome nota de su nueva clave que es: ".$nueva_clave.$RR;
 			} else {
 			  $msj_antes= "Felicidades, su nueva contraseña sera enviada en unos minutos a su correo electronico, le recomendamos revisar su CORREO NO DESEADO O SPAM.";
 			}
