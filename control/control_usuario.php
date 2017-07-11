@@ -87,7 +87,7 @@
 				$campo_usuario->COMMIT();
 				else
 				$campo_usuario->ROLLBACK();
-				$_SESSION['redireccion']='?'.codificar('vista=usuario');
+				$_SESSION['redireccion']='?'.codificar('vista=login');
 			}else{
 				$_SESSION['msj_tipo']="danger";
 				$_SESSION['msj']="Disculpe el codigo de verificación es incorrecto, intente de nuevo.";

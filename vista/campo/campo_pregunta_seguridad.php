@@ -9,17 +9,18 @@ class campo_pregunta_seguridad extends pregunta_seguridad{
 			$configurar->consultar();
 			$row=$configurar->row();
 			$salida.='<div class="col-md-6">';
+		
 			for($i=0 ; $i<$row['pregunta_crear'] ; $i++){
 				$salida.='
 			
 				<div class="row">
 					<div class="col-md-6">
-						<label>Pregunta secreta '.($i+1).'  <span style="color:red" title="Campo obligatorio">(*)</span></label> 
-						<input required name="pregunta[]" type="text" class="form-control" value="'.$this->pregunta[$i].'">
+						<label>Pregunta '.($i+1).'  <span style="color:red" title="Campo obligatorio">(*)</span></label> 
+						<input required name="pregunta['.$this->cod_pregunta_seguridad[$i].']" type="text" class="form-control" value="'.$this->pregunta[$i].'">
 					</div>
 					<div class="col-md-6">
 						<label>Respuesta secreta '.($i+1).'  <span style="color:red" title="Campo obligatorio">(*)</span></label>
-						<input required type="text" name="respuesta[]" class="form-control" value="'.$this->respuesta[$i].'">
+						<input required type="password" name="respuesta['.$this->cod_pregunta_seguridad[$i].']" class="form-control" value="'.$this->respuesta[$i].'">
 					</div>
 				</div>
 			

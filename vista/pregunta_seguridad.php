@@ -29,7 +29,7 @@ class vista_pregunta_seguridad extends campo_pregunta_seguridad{
 			</div>
 				<br>
 			<div class="panel-body">
-				<form method="post">
+				<form method="post" autocomplete="off">
 					<div class="row">
 						<div class="col-md-3"></div>
 							'.$this->preguntas_secretas().'

@@ -84,7 +84,7 @@
 					<label>
 						Teléfono Móvil <span style="color:red" title="Campo obligatorio">(*)</span>
 					</label>
-						<input placeholder="4140000000" required maxlength="10" id="telefono_movil" title="Indique un numero de telefono valido. Ej: 4245138790 (Solo debe contener numeros)" pattern="^[0-9]{10}$" class="form-control"  type="text" onkeyup="this.value=this.value.toUpperCase()" name="telefono_movil" value="'.$this->telefono_movil.'" />
+						<input placeholder="04140000000" required maxlength="11" id="telefono_movil" title="Indique un numero de telefono valido. Ej: 04245138799 (Solo debe contener numeros)" pattern="^[0-9]{11}$" class="form-control"  type="text" onkeyup="this.value=this.value.toUpperCase()" name="telefono_movil" value="'.$this->telefono_movil.'" />
 				</div>';
 			
 		}
@@ -94,7 +94,7 @@
 					<label>
 						Teléfono Fijo
 					</label>
-						<input placeholder="2550000000" maxlength="10" title="Indique un numero de telefono valido. Ej: 4245138790 (Solo debe contener numeros)" pattern="^[0-9]{10}$" id="telefono_fijo" class="form-control"  type="text" onkeyup="this.value=this.value.toUpperCase()" name="telefono_fijo" value="'.$this->telefono_fijo.'" />
+						<input placeholder="02550000000" maxlength="11" title="Indique un numero de telefono valido. Ej: 02555138799 (Solo debe contener numeros)" pattern="^[0-9]{11}$" id="telefono_fijo" class="form-control"  type="text" onkeyup="this.value=this.value.toUpperCase()" name="telefono_fijo" value="'.$this->telefono_fijo.'" />
 				</div>';
 		}
 		public function direccion($bloquear){

@@ -1,7 +1,7 @@
 <?php
 require_once("modelo/class_db.php");
 class pregunta_seguridad extends db{
-		private $cod_pregunta_seguridad;
+		public $cod_pregunta_seguridad;
 		private $cedula;
 		protected $pregunta;
 		protected $respuesta;
@@ -24,8 +24,10 @@ class pregunta_seguridad extends db{
 	
 	public function modificar(){
 			$total=count($this->pregunta);
+			
 			foreach($this->pregunta as $cod=>$pregunta){
-				$confirmar+=parent::ejecutar("UPDATE pregunta_seguridad SET pregunta='$this->pregunta', respuesta='$this->respuesta' WHERE cod_pregunta_seguridad='$this->cod_pregunta_seguridad'");
+				
+				$confirmar+=parent::ejecutar("UPDATE pregunta_seguridad SET pregunta='".$this->pregunta[$cod]."', respuesta='".$this->respuesta[$cod]."' WHERE cod_pregunta_seguridad='".$cod."'");
 			}
 			if($total==$confirmar)
 			return true;
@@ -55,7 +57,7 @@ class pregunta_seguridad extends db{
 	private function cargar_variables(){
 		
 		while($row=$this->row()){
-			
+			$this->cod_pregunta_seguridad[]=$row['cod_pregunta_seguridad'];
 			$this->pregunta[]=$row['pregunta'];
 			$this->respuesta[]=$row['respuesta'];
 		}

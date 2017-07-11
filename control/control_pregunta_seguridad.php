@@ -2,7 +2,7 @@
 	require_once("vista/pregunta_seguridad.php");
 	$vista_pregunta_seguridad = new vista_pregunta_seguridad;
 	
-	$cedula=$_SESSION['cedula'];
+	$cedula		=$_SESSION['cedula'];
 	$pregunta	=$_POST['pregunta'];
 	$respuesta	=$_POST['respuesta'];
 	$evento		=$_POST['evento'];
@@ -22,6 +22,8 @@
 			$vista_pregunta_seguridad->modificar();
 			$_SESSION['msj']='Modificado correctamente';
 			$_SESSION['msj_tipo']='success';
+			
+			$_SESSION['redireccion']='?'.codificar('vista=pregunta_seguridad');				
 			$html_todo=$vista_pregunta_seguridad->formulario('modificar');
 		}break;
 		default:{
@@ -31,8 +33,6 @@
 				$html_todo=$vista_pregunta_seguridad->formulario('modificar');
 			}
 		}
-		
-		
 	}
 
 ?>
