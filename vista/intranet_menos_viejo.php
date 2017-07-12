@@ -48,16 +48,16 @@ function ultimos_concursos(){
 			$color='';
 			$estatus='';
 			if($fecha_inicio>$fecha_actual and $fecha_final>$fecha_actual){
-				$estatus='<a href="?codificar('vista=participar">Próximo</a>';
+				//$estatus='<a href="?codificar("vista=participar")" >Próximo</a>';
 				$color='info';
 				
 			}
 			if($fecha_inicio<$fecha_actual and $fecha_final>$fecha_actual){
-				$estatus='<a href="?codificar('vista=participar&evento=reporte_html_general&cod_concurso='.$row['cod_concurso'].'" >Activo</a>';
+				//$estatus='<a href="?codificar('vista=participar&evento=reporte_html_general&cod_concurso='.$row['cod_concurso'].'" >Activo</a>';
 				$color='success';
 			}
 			if($fecha_inicio<$fecha_actual and $fecha_final<$fecha_actual){
-				$estatus='<a href="?codificar('vista=participar&evento=resultado&cod_concurso='.$row['cod_concurso'].'" >Finalizado</a>';
+				//$estatus='<a href="?codificar('vista=participar&evento=resultado&cod_concurso='.$row['cod_concurso'].'" >Finalizado</a>';
 			}
 
 			$td.='<tr class="'.$color.'">';

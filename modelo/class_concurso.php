@@ -129,6 +129,9 @@ class concurso extends problema{
 	public function listar(){		
 		return parent::ejecutar("SELECT *, DATE_FORMAT(tiempo_activo,'%d-%m-%Y %h:%i %p') as tiempo_activo, DATE_FORMAT(tiempo_inicio,'%d-%m-%Y %h:%i %p') as tiempo_inicio, DATE_FORMAT(tiempo_conjelacion,'%d-%m-%Y %h:%i %p') as tiempo_conjelacion, DATE_FORMAT(tiempo_final,'%d-%m-%Y %h:%i %p') as tiempo_final, DATE_FORMAT(tiempo_desconjelar,'%d-%m-%Y %h:%i %p') as tiempo_desconjelar, DATE_FORMAT(tiempo_inactivo,'%d-%m-%Y %h:%i %p') as tiempo_inactivo FROM concurso ORDER BY cod_concurso DESC");
 	}
+	public function listar_cant($cant){		
+		return parent::ejecutar("SELECT *, DATE_FORMAT(tiempo_activo,'%d-%m-%Y %h:%i %p') as tiempo_activo, DATE_FORMAT(tiempo_inicio,'%d-%m-%Y %h:%i %p') as tiempo_inicio, DATE_FORMAT(tiempo_conjelacion,'%d-%m-%Y %h:%i %p') as tiempo_conjelacion, DATE_FORMAT(tiempo_final,'%d-%m-%Y %h:%i %p') as tiempo_final, DATE_FORMAT(tiempo_desconjelar,'%d-%m-%Y %h:%i %p') as tiempo_desconjelar, DATE_FORMAT(tiempo_inactivo,'%d-%m-%Y %h:%i %p') as tiempo_inactivo FROM concurso ORDER BY cod_concurso DESC LIMIT ".$cant);
+	}
 	public function ultimos_concursos(){		
 		return parent::ejecutar("SELECT *, DATE_FORMAT(tiempo_activo,'%d-%m-%Y %h:%i %p') as tiempo_activo, DATE_FORMAT(tiempo_inicio,'%d-%m-%Y %h:%i %p') as tiempo_inicio, DATE_FORMAT(tiempo_conjelacion,'%d-%m-%Y %h:%i %p') as tiempo_conjelacion, DATE_FORMAT(tiempo_final,'%d-%m-%Y %h:%i %p') as tiempo_final, DATE_FORMAT(tiempo_desconjelar,'%d-%m-%Y %h:%i %p') as tiempo_desconjelar, DATE_FORMAT(tiempo_inactivo,'%d-%m-%Y %h:%i %p') as tiempo_inactivo FROM concurso ORDER BY cod_concurso DESC");
 	}

@@ -52,6 +52,8 @@ switch($evento){
 		$usuario->set_cod_tipo_usuario($_SESSION['cod_tipo_usuario']);
 		$_SESSION['intentos']=0;
 		$usuario->registrar_bitacora("Entrada","El usuario a entrado al sistema correctamente. con la ip: ".getUserIP());
+		header('location:?'.codificar('vista=intranet'));
+		exit();
 		}
 		$_SESSION['texto_btn_session']="Cerrar Sesión";
 	}

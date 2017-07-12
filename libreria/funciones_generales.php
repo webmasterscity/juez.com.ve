@@ -17,11 +17,14 @@ function widget_twiter(){
 	
 	}
 function widget_concursos(){
+	$cant=5;
 	require_once("modelo/class_concurso.php");
 	$concurso = new concurso;
-	$concurso->listar();
+	$concurso->listar_cant($cant);
 	while($row_concurso = $concurso->row()){
-		 $html_concurso.=' <article class="timeline-entry">
+		 $html_concurso.=' 
+		 
+							<article class="timeline-entry">
                                     <div class="timeline-entry-inner">
                                         <time datetime="2014-01-10T03:45" class="timeline-time"><span>'.date('h:i:s',strtotime($row_concurso['tiempo_inicio'])).'</span><span>'.date('d-m-Y',strtotime($row_concurso['tiempo_inicio'])).'</span></time>
                                         <div class="timeline-icon bg-blue"><p class="icon"><i class="icon fa fa-trophy"></i></p></div>
@@ -33,19 +36,18 @@ function widget_concursos(){
 		}
 	$html.='
 	
-   
-	                            <div class="timeline-centered timeline-sm" style="background:#F6F6F6">
-													<div class="page-title-breadcrumb ">
-												<div class="page-header pull-left">
-													<h4 class="mbs">Concursos</h4>
-												</div>
-												<div class="clearfix"></div>
-											</div>
+   	        	<div class="panel panel-default">
+					<div class="panel-heading">
+						Ultimos '.$cant.' Concursos
+					</div>
+					<div class="panel-body">
+						<div class="timeline-centered timeline-sm" style="border:0px">
+							
 	                           <br>
-
                                 '.$html_concurso.'
-                            </div>
-       
+                        </div>
+					</div>
+				</div>
                         ';
 	return $html;
 }
@@ -83,6 +85,54 @@ function widget_estadisticas_lenguajes(){
            return $html;
 	
 }
+function widget_ultimos_envios(){
+		require_once("modelo/class_envio_entrenamiento.php");
+		$envio = new envio_entrenamiento;
+		$envio->ultimos_envios();
+
+		while($row=$envio->row()){
+			
+			$td.='<tr class="'.($row['cod_msj_salida']==1 ? 'success': '').'">';
+			$td.='<td>'.$row['cod_envio_entrenamiento'].'</td>';
+			$td.='<td>'.$row['fecha_hora'].' VEN</td>';
+			$td.='<td>'.$row['nombre_usuario'].'</td>';
+			$td.='<td><a href="?'.codificar('vista=participar_entrenamiento&evento=formulario_envio&cod_problema='.$row['cod_problema']).'" >'.str_pad($row['cod_problema'], 4, "0", STR_PAD_LEFT).'</a></td>';
+			$td.='<td>'.$row['nombre_lenguaje'].'</td>';
+			switch($row['cod_msj_salida']){
+					case '1': {
+						$color='green';
+						$icono='glyphicon glyphicon-ok';
+					}
+					break;
+					default: {
+						$color='red';
+						$icono='glyphicon glyphicon-thumbs-down';
+						}
+					break;
+			}
+			$td.='<td style="color:'.$color.'"><span class="'.$icono.'"> </span> '.$row['resultado'].'</td>';
+			$td.='</tr>';
+		}
+		$html='
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Ultimos envios	
+					</div>
+					<div class="panel-body">
+				<table class="table table-striped" style="font-size:13px"><tr>
+					<th>Cod.</th>
+					<th>Fecha</th>
+					<th>Usuario</th>
+					<th title="Codigo del problema">Prob.</th>
+					<th>Lenguaje</th>
+					<th>Resultado</th>
+				</tr>'.$td.'</table>
+			</div>
+		</div>
+		';		
+		return $html;
+	
+}
 function widget_estadisticas(){
 	require_once("modelo/class_envio_entrenamiento.php");
 	require_once("modelo/class_concurso.php");
@@ -98,7 +148,8 @@ function widget_estadisticas(){
 	$total_usuario=$usuario->listar();
 	
 	$html.='
-	                        <div class="col-sm-6 col-md-3">
+	                    <div class="col-sm-6 col-md-3">
+	                    <a href="?'.codificar('vista=envio_entrenamiento').'" style="color:#000">
                             <div class="panel profit db mbm">
                                 <div class="panel-body"><p class="icon"><i class="icon fa fa-check"></i></p><h4 class="value"><span >'.$total_envio_entrenamiento.'</span></h4>
 
@@ -106,32 +157,39 @@ function widget_estadisticas(){
 
                                 </div>
                             </div>
+                         </a>
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <div class="panel income db mbm">
-                                <div class="panel-body"><p class="icon"><i class="icon fa fa-trophy"></i></p><h4 class="value"><span>'.$total_concurso.'</span></h4>
+							<a href="?'.codificar('vista=participar').'" style="color:#000">
+								<div class="panel income db mbm">
+									<div class="panel-body"><p class="icon"><i class="icon fa fa-trophy"></i></p><h4 class="value"><span>'.$total_concurso.'</span></h4>
 
-                                    <p class="description">Concursos</p>
+										<p class="description">Concursos</p>
 
-                                </div>
-                            </div>
+									</div>
+								</div>
+							 </a>
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <div class="panel task db mbm">
-                                <div class="panel-body"><p class="icon"><i class="icon fa fa-keyboard-o"></i></p><h4 class="value"><span>'.$total_problema.'</span></h4>
+							<a href="?'.codificar('vista=participar_entrenamiento').'" style="color:#000">
+								<div class="panel task db mbm">
+									<div class="panel-body"><p class="icon"><i class="icon fa fa-keyboard-o"></i></p><h4 class="value"><span>'.$total_problema.'</span></h4>
 
-                                    <p class="description">Problemas</p>
+										<p class="description">Problemas</p>
 
-                                </div>
-                            </div>
+									</div>
+								</div>
+							</a>
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <div class="panel visit db mbm">
-                                <div class="panel-body"><p class="icon"><i class="icon fa fa-group"></i></p><h4 class="value"><span>'.$total_usuario.'</span></h4>
+							<a href="?'.codificar('vista=tabla_posicion_entrenamiento').'" style="color:#000">
+								<div class="panel visit db mbm">
+									<div class="panel-body"><p class="icon"><i class="icon fa fa-group"></i></p><h4 class="value"><span>'.$total_usuario.'</span></h4>
 
-                                    <p class="description">Usuarios</p>
-                                </div>
-                            </div>
+										<p class="description">Usuarios</p>
+									</div>
+								</div>
+							</a>
                         </div>';
                         return $html;
 	}

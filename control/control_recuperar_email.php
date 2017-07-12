@@ -6,7 +6,7 @@
 	$de			='ovijudge@gmail.com';
 	$asunto		=htmlspecialchars('Nueva clave de acceso.', ENT_QUOTES);
 	$mensaje	=htmlspecialchars('Su nueva clave para el acceso al sistema es: '.$nueva_clave.' por medidas de seguridad le recomendamos cambiarla inmediatamente.', ENT_QUOTES);
-	$nombre		=htmlspecialchars('OVIJUDGE.', ENT_QUOTES);
+	$nombre		=htmlspecialchars('OVIJUDGE', ENT_QUOTES);
 	$pregunta	=$_POST['pregunta'];
 	$respuesta	=$_POST['respuesta'];
 	
