@@ -125,7 +125,7 @@ class usuario extends campo_persona{
 		return $res;
 	}
 	public function consulta_doble($campo1,$campo2){
-		return parent::ejecutar("SELECT usuario_estilo.tema, tipo_usuario.nombre as nombre_tipo_usuario, usuario.*, persona.* FROM usuario INNER JOIN persona ON persona.cedula=usuario.cedula INNER JOIN tipo_usuario ON usuario.cod_tipo_usuario=tipo_usuario.cod_tipo_usuario INNER JOIN usuario_estilo ON usuario_estilo.cod_usuario=usuario.cod_usuario WHERE usuario.$campo1='".$this->$campo1."' AND usuario.$campo2='".$this->$campo2."'");
+		return parent::ejecutar("SELECT usuario_estilo.tema, tipo_usuario.nombre as nombre_tipo_usuario, usuario.*, persona.* FROM usuario INNER JOIN persona ON persona.cedula=usuario.cedula INNER JOIN tipo_usuario ON usuario.cod_tipo_usuario=tipo_usuario.cod_tipo_usuario LEFT JOIN usuario_estilo ON usuario_estilo.cod_usuario=usuario.cod_usuario WHERE usuario.$campo1='".$this->$campo1."' AND usuario.$campo2='".$this->$campo2."'");
 	}
 	public function elimina_por($campo){
 		return parent::ejecutar("DELETE FROM usuario WHERE $campo='".$this->$campo."'");

@@ -66,7 +66,7 @@ video {
 									<li><a href="#" onclick="return cambiar_rif_combo_usuario(\'E \')">E </a></li>
 								</ul>
 							</div>
-					<div class="input-icon right"><i class="fa fa-user"></i><input required title="Solo debe escribir numeros" type="text" required pattern="^[0-9]+$" placeholder="Cedula" name="cedula" class="form-control"></div>
+					<div class="input-icon right"><i class="fa fa-user"></i><input value="" required title="Solo debe escribir numeros" type="text" required pattern="^[0-9]+$" placeholder="Cedula" name="cedula" class="form-control" ></div>
 					</div>
 				</div>
 				<div class="form-group">
