@@ -1,3 +1,4 @@
+<script type="text/javascript" src="libreria/jquery/js/jquery-ui.min.php"></script>
 <div class="panel panel-default">
 <div class="panel-heading">
 	<div class="row">

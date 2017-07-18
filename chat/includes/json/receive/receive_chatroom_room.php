@@ -169,6 +169,7 @@
 	// ##################### START CHATROOM USERS RECEIVE ####################
 	if (logged_in($userid)) 
 	{
+		
 		$result2 = $db->execute("
 			SELECT is_mod, chatroom_id
 			FROM chat_chatroom_users
@@ -209,12 +210,12 @@
 				is_mod = '" . $db->escape_string($is_mod) . "', 
 				session_time = '" . $time . "'
 		");
-		
+		#AQUI CAMBIE ALGO
 		$result = $db->execute("
 			SELECT user_id, is_admin, is_mod, block_chats 
 			FROM chat_chatroom_users
 			WHERE (chatroom_id = '" . $db->escape_string($chatroom_id) . "'
-				AND session_time > (" . $time . " - 91))
+				AND session_time > (" . $time . " - 91)) 
 			ORDER BY is_admin DESC, is_mod DESC, session_time DESC
 		");
 		
@@ -251,6 +252,7 @@
 			
 			if (check_if_guest($fetchid))
 			{
+				
 				$title = 1;
 				$sql = get_guest_details($fetchid);
 				$result2 = $db->execute($sql);

@@ -24,6 +24,7 @@ function tabla_posicion_entrenamiento(){
 					
 					</tbody>
 						<tr><td colspan="3" style="font-size:12px">El calculo de puntos se realiza sumando los problemas resueltos en cada lenguaje de programación.</td></tr>
+						<tr><td colspan="3" style="font-size:12px">Nos reservamos el derecho de mostrar los usuarios sin puntos.</td></tr>
 				</table>
 			</div>
 		

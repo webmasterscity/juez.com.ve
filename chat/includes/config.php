@@ -1,8 +1,8 @@
 <?php 
 
 	define('DB_SERVER','localhost'); 
-	define('DB_USERNAME','webmasterscity'); 
-	define('DB_PASSWORD','-Ds0082ds'); 
+	define('DB_USERNAME','root'); 
+	define('DB_PASSWORD','-dS0082ds'); 
 	define('DB_NAME','ovi');	
 		
 	/**

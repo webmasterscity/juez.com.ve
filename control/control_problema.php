@@ -15,6 +15,8 @@
 	$tipo_texto_problema=$_POST["tipo_texto_problema"];
 	$lenguaje_prog=$_POST["lenguaje_prog"];
 	$enunciado = $_POST['enunciado'];
+	$concurso = $_POST['concurso'];
+	
 	//detalle
 	$input=$_POST['input'];
 	$output=$_POST['output'];
@@ -31,6 +33,7 @@
 		$problema->set_texto_problema($texto_problema,$texto_problema_viejo);
 		$problema->set_tipo_texto_problema($tipo_texto_problema);			
 		$problema->set_enunciado($enunciado);			
+		$problema->set_concurso($concurso);			
 		
 	//MANEJADOR DE EVENTOS
 	switch($evento){

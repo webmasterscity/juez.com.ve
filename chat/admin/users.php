@@ -1,16 +1,5 @@
 <?php
 
-	/*
-	|| #################################################################### ||
-	|| #                             chat                            # ||
-	|| # ---------------------------------------------------------------- # ||
-	|| #    Copyright ©2010-2012 ArrowSuites LLC. All Rights Reserved.    # ||
-	|| # This file may not be redistributed in whole or significant part. # ||
-	|| # ---------------- chat IS NOT FREE SOFTWARE ---------------- # ||
-	|| #   http://www.chat.com | http://www.chat.com/license/   # ||
-	|| #################################################################### ||
-	*/
-
 	// ########################## INCLUDE BACK-END ###########################
 	require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . "includes/admin_init.php");
 	
@@ -446,7 +435,7 @@
 			$group_enable_mode = get_var('group_enable_mode');
 			
 			update_config_file();
-			$msg = "Your settings were successfully saved.";
+			$msg = "Tu configuración ha sido guardada exitosamente.";
 		} 
 		else
 		{

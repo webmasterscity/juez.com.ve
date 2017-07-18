@@ -241,6 +241,10 @@ require_once("modelo/class_problema.php");
 			';
 			return $html;
 		}
+		function para_concurso(){
+			$html='<div class="col-md-3">Limitar el uso del problema a: <br><br> <input type="checkbox" value="1" name="concurso" '.($this->concurso ? 'checked' : '' ).'> Concursos</div>';
+			return $html;
+			}
 		function lenguajes_de_programacion(){
 			require_once("modelo/class_lenguaje_prog.php");
 			$lenguaje_prog = new lenguaje_prog;
@@ -259,7 +263,7 @@ require_once("modelo/class_problema.php");
 				$lenguajes.=' <input type="checkbox" '.($cod_lenguaje_prog[$row['cod_lenguaje_prog']] ? 'checked' : '' ).' name="lenguaje_prog[]" value="'.$row['cod_lenguaje_prog'].'" >'.$row['nombre'].' ';
 			}
 			$html.='
-		<div class="col-md-7">Lenguajes de programación: '.$lenguajes.'</div>
+		<div class="col-md-7">Lenguajes de programación: <br><br>'.$lenguajes.'</div>
 		<script>
 				$("form").submit(function(e){
 					if ($("input[type=checkbox]:checked").length === 0) {

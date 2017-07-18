@@ -1,16 +1,5 @@
 <?php
 
-	/*
-	|| #################################################################### ||
-	|| #                             chat                            # ||
-	|| # ---------------------------------------------------------------- # ||
-	|| #    Copyright ©2010-2012 ArrowSuites LLC. All Rights Reserved.    # ||
-	|| # This file may not be redistributed in whole or significant part. # ||
-	|| # ---------------- chat IS NOT FREE SOFTWARE ---------------- # ||
-	|| #   http://www.chat.com | http://www.chat.com/license/   # ||
-	|| #################################################################### ||
-	*/
-
 	// ########################## INCLUDE BACK-END ###########################
 	require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . "includes/admin_init.php");
 	
@@ -576,12 +565,12 @@
 		
 		if (empty($_POST['limit_seconds_num']) OR empty($_POST['limit_message_num']) OR !is_numeric($_POST['limit_seconds_num']) OR !is_numeric($_POST['limit_message_num'])) 
 		{
-			$error = "The chat room flood selection is empty of invalid.";
+			$error = "La selecciÃ³n de la llenura de la sala esta vacia o es invalida.";
 		}
 		
 		if (empty($_POST['add_chatroom_img']) AND empty($_FILES['add_chatroom_img_upload']['size'])) 
 		{
-			$error = "You must enter or upload an icon for this chat room.";
+			$error = "Tu debes seleccionar o subir un icono en esta sala.";
 		}
 		
 		if (!empty($_POST['add_chatroom_img']))

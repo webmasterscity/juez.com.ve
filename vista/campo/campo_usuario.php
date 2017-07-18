@@ -154,6 +154,7 @@ class campo_usuario extends usuario{
 			';
 			return $salida;
 		}	
+
 		public function combo_tipo_usuario(){
 			include_once("modelo/class_tipo_usuario.php");
 			$tipo_usuario = new tipo_usuario;
@@ -182,10 +183,11 @@ class campo_usuario extends usuario{
 	public function combo_tipo_usuario_rol($codigo){
 			include_once("modelo/class_tipo_usuario.php");
 			$tipo_usuario = new tipo_usuario;
-			$tipo_usuario->listar();
+			$tipo_usuario->set_cod_tipo_usuario($_SESSION['cod_tipo_usuario']);
+			$tipo_usuario->listar_sin_yo();
 			
-			$salida.= '<select style="z-index:1"  id="cod_tipo_usuario" class="form-control" name="cod_tipo_usuario" >'; 
-			$salida.= '<option value="-">Seleccione</option>';
+			$salida.= '<select required style="z-index:1"  id="cod_tipo_usuario" class="form-control" name="cod_tipo_usuario" >'; 
+			$salida.= '<option value="">Seleccione</option>';
 			while($row_tipo_usuario = $tipo_usuario->row()){
 				$salida.= '<option value="'.$row_tipo_usuario["cod_tipo_usuario"].'"';	
 			if($codigo == $row_tipo_usuario["cod_tipo_usuario"]) $salida.= " selected ";									

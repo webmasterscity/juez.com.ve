@@ -1,0 +1,5 @@
+CREATE TABLE persona (  cedula varchar(10), nombre varchar(100), apellido varchar(100), ocupacion varchar(100)    );
+INSERT INTO persona VALUES ('18671986','Leonardo', 'Melendez','Estudiante');
+INSERT INTO persona VALUES ('18164019','Jesus', 'Romero','Comerciante');
+INSERT INTO persona VALUES ('23580136','Adriana', 'Vizcaya','Diseñadora');
+SELECT cedula,nombre FROM persona;

@@ -36,17 +36,17 @@
 					} 
 					else
 					{
-						$error = "You have entered an invalid username and/or password.  Please try again.";
+						$error = "Has introducido el usuario y/o clave incorrecto, por favor intente nuevamente.";
 					}	
 				} 
 				else 
 				{
-					$error = "You have entered an invalid username and/or password.  Please try again.";
+					$error = "Has introducido el usuario y/o clave incorrecto, por favor intente nuevamente.";
 				}
 			}
 			else
 			{
-				$error = "You have not filled in the username or password.  Please try again.";
+				$error = "No has escrito el usuario y/o clave.  Intente nuevamente.";
 			}
 		}
 		

@@ -143,7 +143,7 @@
 				$html_todo=$dato_personal->cambiar_rol();
 			}else{
 
-				$_SESSION['msj']='Error: formato no permitido solo se permite formato jpg';
+				$_SESSION['msj']='Error: formato no permitido, solo se permite imagenes JPG.';
 				$_SESSION['msj_tipo']='danger';
 					$html_todo=$dato_personal->cambiar_rol();
 		}

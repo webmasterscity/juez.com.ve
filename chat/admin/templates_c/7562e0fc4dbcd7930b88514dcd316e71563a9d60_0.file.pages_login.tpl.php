@@ -30,10 +30,10 @@ function content_58192e61042071_98946245 ($_smarty_tpl) {
 	<link rel="stylesheet" type="text/css" href="includes/css/login-style.css"> 
 	
 	<?php echo '<script'; ?>
- type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"><?php echo '</script'; ?>
+ type="text/javascript" src="../../libreria/jquery/js/jquery-1.8.3.min.js"><?php echo '</script'; ?>
 > 
 	<?php echo '<script'; ?>
- type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.3/jquery-ui.min.js"><?php echo '</script'; ?>
+ type="text/javascript" src="../../libreria/jquery/js/jquery-ui.min.js"><?php echo '</script'; ?>
 >
 	<?php echo '<script'; ?>
  type="text/javascript" src="includes/js/scripts.js"><?php echo '</script'; ?>

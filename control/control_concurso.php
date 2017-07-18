@@ -82,7 +82,9 @@
 		case 'registrar':{
 			$problema_concurso = new vista_problema_concurso;	
 			$concurso->iniciar_transaccion();
+			
 			if($concurso->registrar()==1){	
+				
 				$ultimo_id=$concurso->ultimo_id();
 				$problema_concurso->set_cod_concurso($ultimo_id);
 				for($i=0 ; $i<count($cod_problema); $i++){
@@ -96,13 +98,17 @@
 					$problema_concurso->registrar();
 				}
 				$concurso->commit();
-				$_SESSION['msj']='Registrado correctamente';
+				$_SESSION['msj']='Concurso creado correctamente';
 				$_SESSION['msj_tipo']='success';
 				$concurso->registrar_bitacora("Registro","Concursos con Nro. Unico: ".$ultimo_id);
 				$concurso = new vista_concurso;
 				
 			}else{
+				
+				$_SESSION['msj']='No es posible crear el concurso, puede que ya el nombre exista ó contacte al administrador.';
+				$_SESSION['msj_tipo']='danger';
 				$concurso->rollback();	
+				
 			}
 			
 			$html_todo=$concurso->formulario('registrar');
@@ -218,7 +224,7 @@
 	$lobjPdf->SetFont("Arial","",10);
 	$lobjPdf->Cell(55,$c,$concurso->tiempo_inicio,1,0,'C',false);
 	$lobjPdf->SetFont("Arial","B",10);
-	$lobjPdf->Cell(40,$c,utf8_decode('Congelación:'),1,0,'L',false);
+	$lobjPdf->Cell(40,$c,utf8_decode('Congelar resultados:'),1,0,'L',false);
 	$lobjPdf->SetFont("Arial","",10);
 	$lobjPdf->Cell(0,$c,$concurso->tiempo_conjelacion,1,0,'C',false);
 
@@ -228,7 +234,7 @@
 	$lobjPdf->SetFont("Arial","",10);
 	$lobjPdf->Cell(55,$c,$concurso->tiempo_final,1,0,'C',false);
 	$lobjPdf->SetFont("Arial","B",10);
-	$lobjPdf->Cell(40,$c,utf8_decode('Descongelar:'),1,0,'L',false);
+	$lobjPdf->Cell(40,$c,utf8_decode('Mostrar resultados:'),1,0,'L',false);
 	$lobjPdf->SetFont("Arial","",10);
 	$lobjPdf->Cell(0,$c,$concurso->tiempo_desconjelar,1,0,'C',false);
 	$lobjPdf->Ln();

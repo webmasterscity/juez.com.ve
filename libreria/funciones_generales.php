@@ -633,8 +633,7 @@ function foto_perfil_peque($cedula){
 		$ciphertext_dec = substr($ciphertext_dec, $iv_size);
 
 		# podrían eliminarse los caracteres con valor 00h del final del texto puro
-		$plaintext_dec = mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $key,
-										$ciphertext_dec, MCRYPT_MODE_CBC, $iv_dec);
+		$plaintext_dec = mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $key,$ciphertext_dec, MCRYPT_MODE_CBC, $iv_dec);
 		
 		return $plaintext_dec;
 	}

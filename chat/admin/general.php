@@ -15,7 +15,7 @@
 	if (var_check('chatfeatures_submit')) 
 	{
 		if (!is_numeric(get_var('video_chat_width')) OR !is_numeric(get_var('video_chat_height')))
-			$error = "The video chat width and height must be a number only.";
+			$error = "La anchura y altura del video chat debe ser solo numeros";
 		
 		if (empty($error))
 		{
@@ -136,7 +136,7 @@
 		} 
 		else
 		{
-			$error = "There was a database error.  Please try again.";
+			$error = "Error en la base de datos, por favor intente nuevamente.";
 		}
 	}
 	
@@ -200,11 +200,11 @@
 				$admin_text_color = get_var('admin_text_color');
 				
 				update_config_file();
-				$msg = "Your settings were successfully saved.";
+				$msg = "Tu configuración ha sido guardada exitosamente.";
 			} 
 			else
 			{
-				$error = "There was a database error.  Please try again.";
+				$error = "Error en la base de datos.  Intente nuevamente.";
 			}	
 		}
 	}

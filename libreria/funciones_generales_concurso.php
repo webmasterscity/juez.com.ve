@@ -1,10 +1,12 @@
 <?php
 //Funciones generales para el modulo Concursos
 function titulo_menu($cod_concurso,$evento){
+	
 $html.='
 	<ul class="nav nav-tabs">
 		<li role="presentation" '.($evento=='reporte_html_general' ? 'class="active"' : '').'><a href="?'.codificar('vista=participar&evento=reporte_html_general&cod_concurso='.$cod_concurso).'">Problemas</a></li>
 		<li role="presentation" '.($evento=='resultado' ? 'class="active"' : '').' ><a href="?'.codificar('vista=participar&evento=resultado&cod_concurso='.$cod_concurso).'">Resultados</a></li>
+		<li role="presentation"><a target="_blank" href="?'.codificar('vista=envio_concurso&cod_concurso='.$cod_concurso).'">Envios del concurso</a></li>
 	</ul>
 	';
 	return $html;
@@ -52,7 +54,7 @@ $html.='
 <script type="text/javascript" src="libreria/contador/jquery.countdown.min.js"></script>
  
 	<script>
-	var tiempo_evento			= '.strtotime($tiempo_inicio).';
+	var tiempo_evento			= '.strtotime ( '+2 second' ,strtotime($tiempo_inicio)).';
 	var tiempo_actual_servidor	='.time().';
 	var tiempo_actual_cliente	=Math.floor(new Date().getTime() / 1000);
 	var diferencia	=tiempo_actual_servidor-tiempo_actual_cliente;
@@ -121,7 +123,7 @@ $html.='
 		});	
 	});	
 	</script>
-<div id="tiempo_restante" ></div>
+<div id="tiempo_restante" style="font-size:15px"></div>
 ';	
 return $html;
 	
@@ -145,7 +147,7 @@ return $html;
 					<div class="col-md-6"><span style="font-size:18px"><span class="glyphicon glyphicon-user">
 						</span> Enviar Solución</span>
 					</div>
-					<div class="col-md-3">'.($thisa->tipo=='concurso' ? btn_regresar('participar&evento=reporte_html_general&cod_concurso='.$thisa->cod_concurso) : btn_regresar('participar_entrenamiento')).'</div>
+					<div class="col-md-3">'.($thisa->tipo=='concurso' ? btn_regresar_respaldo('participar&evento=reporte_html_general&cod_concurso='.$thisa->cod_concurso) : btn_regresar_respaldo('participar_entrenamiento')).'</div>
 				</div>
 			</div>
 			<div class="panel-body">

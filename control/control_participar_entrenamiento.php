@@ -64,7 +64,7 @@
 		default:{
 			
 			$problema->registrar_bitacora("Listo","Problemas publico");
-			$problema->listar();
+			$problema->listar_no_concurso();
 			
 			$html_todo=$problema->reporte_html_general($vista);
 			

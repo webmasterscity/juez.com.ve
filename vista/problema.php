@@ -203,8 +203,9 @@ class vista_problema extends campo_problema{
 	
 		<div class="row">
 		<br>
-					<div class="col-md-2"></div>
+					<div class="col-md-1"></div>
 					'.$this->lenguajes_de_programacion().'
+					'.$this->para_concurso().'
 					
 				
 					
@@ -237,16 +238,15 @@ class vista_problema extends campo_problema{
 			$html.='
 					<br><div class="row">
 		<div class="col-md-12">
-
-		  <!-- Nav tabs -->
-		  <ul class="nav nav-tabs" role="tablist">
+  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs" role="tablist" style="padding-bottom:0px; border-bottom:0px;">
 			<li role="presentation" class="active">
 			<a href="#caso_de_prueba" aria-controls="problemas" role="tab" data-toggle="tab">
-			<span class="glyphicon glyphicon-arrow-down"></span> Casos de prueba</a></li>
-			</ul>
+			<span class="glyphicon glyphicon-arrow-down"></span> Casos de prueba <span title="coloque 0 cuando necesite un campo de entrada vacio.">(?)</span></a></li>
+		</ul>
 
 		  <!-- Tab panes -->
-		  <div class="tab-content"> 
+		  <div class="tab-content" style="padding-top:0px"> 
 			<div role="tabpanel" class="tab-pane active" id="caso_de_prueba">
 			<table class="table table-striped" id="tabla_detalle">
 					<thead>

@@ -1,4 +1,3 @@
-
 	$(function() {
 						$("#cedula").lemez_aceptar("numero","");
 						$("#nombre").lemez_aceptar("texto","");
@@ -26,13 +25,22 @@
 		//$('registrar').disabled();
 
 	});
+	
 		function verificar_cedula(cedula) { 
 			$.get( "control/control_ajax.php?evento=verificar_usuario&cedula="+nacionalidad_cedula.value+"-"+cedula.value, function( data ) {
 			if(data>0){
 				alert("Disculpe la cedula ya se encuentra en uso, intente nuevamente, si olvido su contraseña haga clic en ayuda.");
 				cedula.value="";
 				cedula.focus();
-				}
+				}else{
+					$.get( "libreria/cne/cne.php?n="+nacionalidad_cedula.value+"&c="+cedula.value, function( data ) {
+						obj = JSON.parse(data);
+						if(obj.error==0){			
+							$("#nombre").val(obj.nombres);
+							$("#apellido").val(obj.apellidos);
+							}		
+						});				
+					}
 			});	
 		} 
 		

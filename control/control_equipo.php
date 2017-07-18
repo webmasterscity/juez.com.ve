@@ -77,7 +77,7 @@
 					$det_usuario_equipo->registrar();
 				}
 				$equipo->commit();
-				$_SESSION['msj']='Registrado correctamente';
+				$_SESSION['msj']='Modificado correctamente';
 				$_SESSION['msj_tipo']='success';
 				$equipo->registrar_bitacora("Registro","Equipos con Nro. Unico: ".$equipo->ultimo_id());
 			}else{

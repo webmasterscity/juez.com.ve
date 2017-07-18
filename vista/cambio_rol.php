@@ -23,7 +23,7 @@
 		if($det->ejecutar($sqldt)){
 			$row=$det->row();
 			$_SESSION['msj']='Su solicitud de cambio a '.$row['nombre'].' se esta evaluando.';
-			$_SESSION['msj_tipo']='danger';
+			$_SESSION['msj_tipo']='success';
 			//exit('<script> window.location.href="index.php"; </script>');
 
 			$sis=1;
@@ -41,10 +41,11 @@
 					</div>
 					<div class="panel-body">
 					<form method="POST" autocomplete="off" enctype="multipart/form-data">
+					<div class="row"><div class="col-md-12" style="color:red; text-align:right">(*) Todos los campos son obligatorios</div></div>
 						<div class="row">
 						<div class="col-md-2"></div>
 						<input type="hidden" name="codigo_coli" value="'.$row['cod_cambio'].'">
-
+						
 						<div class="col-md-3">
 							<label>
 								Rol Solicitado<span style="color:red" title="Campo obligatorio">(*)</span>
@@ -57,7 +58,7 @@
 							<label>
 								Carnet institucional (imagen JPG)<span style="color:red" title="Campo obligatorio">(*)</span>
 							</label>
-								<input type="file" id="documento" name="documento" class="form-control" value="" accept="image/*">
+								<input required type="file" id="documento" name="documento" class="form-control" value="" accept="image/*">
 
 						</div>
 						</div>
@@ -69,7 +70,7 @@
 									Motivo <span style="color:red" title="Campo obligatorio">(*)</span>
 								</label>
 
-									<textarea id="motivo" name="motivo" class="form-control">'.strtoupper($row['motivo']).'</textarea>
+									<textarea required id="motivo" name="motivo" class="form-control">'.strtoupper($row['motivo']).'</textarea>
 							</div>
 
 						</div>

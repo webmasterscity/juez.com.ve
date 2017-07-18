@@ -1,16 +1,5 @@
 <?php
 
-	/*
-	|| #################################################################### ||
-	|| #                             chat                            # ||
-	|| # ---------------------------------------------------------------- # ||
-	|| #    Copyright ©2010-2012 ArrowSuites LLC. All Rights Reserved.    # ||
-	|| # This file may not be redistributed in whole or significant part. # ||
-	|| # ---------------- chat IS NOT FREE SOFTWARE ---------------- # ||
-	|| #   http://www.chat.com | http://www.chat.com/license/   # ||
-	|| #################################################################### ||
-	*/
-
 	// ########################## INCLUDE BACK-END ###########################
 	require_once (dirname(dirname(dirname(dirname(__FILE__)))) . DIRECTORY_SEPARATOR . 'bootstrap.php');
 	require_once (dirname(dirname(dirname(dirname(__FILE__)))) . DIRECTORY_SEPARATOR . AC_FOLDER_INCLUDES . DIRECTORY_SEPARATOR . 'init.php');

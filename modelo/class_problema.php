@@ -11,11 +11,16 @@ class problema extends db{
 		public $texto_problema;
 		public $tipo_texto_problema;
 		public $codigo_fuente;	
-		public $enunciado;	
+		public $enunciado;
+		public $concurso;	
 // CREAMOS LOS METODOS SET		
 			public function set_cod_problema($cod_problema){
 			
 					$this->cod_problema= filter_var($cod_problema,FILTER_SANITIZE_NUMBER_INT);
+			}
+			public function set_concurso($concurso){
+			
+					$this->concurso= filter_var($concurso,FILTER_SANITIZE_NUMBER_INT);
 			}
 		
 			public function set_nombre($nombre){
@@ -71,7 +76,7 @@ class problema extends db{
 		
 
 	public function registrar(){		
-		return parent::ejecutar("INSERT INTO problema (nombre,limite_tiempo,limite_memoria,texto_problema,enunciado,estatus) VALUES ('$this->nombre','$this->limite_tiempo',$this->limite_memoria,'$this->texto_problema','$this->enunciado','2')");
+		return parent::ejecutar("INSERT INTO problema (nombre,limite_tiempo,limite_memoria,texto_problema,enunciado,estatus,concurso) VALUES ('$this->nombre','$this->limite_tiempo',$this->limite_memoria,'$this->texto_problema','$this->enunciado','2','$this->concurso')");
 	}
 	public function consultar(){		
 		if($this->cod_problema){
@@ -104,6 +109,9 @@ class problema extends db{
 	public function listar(){		
 		return parent::ejecutar("SELECT * FROM problema WHERE estatus=1");
 	}
+	public function listar_no_concurso(){		
+		return parent::ejecutar("SELECT * FROM problema WHERE estatus=1 AND concurso<>1");
+	}
 	public function listar_problemas(){		
 		return parent::ejecutar("SELECT * FROM problema WHERE estatus=1");
 	}
@@ -115,7 +123,7 @@ class problema extends db{
 	}
 	public function modificar(){	
 		if($this->cod_problema){	
-			return parent::ejecutar("UPDATE problema SET nombre='$this->nombre',limite_tiempo='$this->limite_tiempo',limite_memoria=$this->limite_memoria,texto_problema='$this->texto_problema',enunciado='$this->enunciado' WHERE cod_problema='$this->cod_problema'");
+			return parent::ejecutar("UPDATE problema SET nombre='$this->nombre',limite_tiempo='$this->limite_tiempo',limite_memoria=$this->limite_memoria,texto_problema='$this->texto_problema',enunciado='$this->enunciado',concurso='$this->concurso' WHERE cod_problema='$this->cod_problema'");
 		}
 	}
 	//ESTA FUNCION EXTRAE EL ULTIMO REGISTRO DE LA TABLA
@@ -164,6 +172,7 @@ class problema extends db{
 		$this->texto_problema=$row['texto_problema'];
 		$this->tipo_texto_problema=$row['tipo_texto_problema'];
 		$this->enunciado=$row['enunciado'];
+		$this->concurso=$row['concurso'];
 		
 	}
 }

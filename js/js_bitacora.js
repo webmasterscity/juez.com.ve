@@ -1,9 +1,13 @@
 			$(function(){
 				$( "#fecha_inicio" ).datepicker({
-					maxDate: new Date()
+					maxDate: new Date(),
+					changeMonth: true,
+						changeYear: true,
 					});
 				$( "#fecha_fin" ).datepicker({
-					maxDate: new Date()
+					maxDate: new Date(),
+					changeMonth: true,
+						changeYear: true,
 					});
 				})
 				

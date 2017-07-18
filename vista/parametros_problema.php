@@ -1,3 +1,7 @@
+<?php
+$msj_aprobado='Cantidad de aprobaciones necesarias para que un problema este disponible al publico.';
+$msj_rechazado='Cantidad de rechazos necesarios para que un problema sea anulado.';
+?>
 <script type="text/javascript" src="js/js_parametro_problemas.js"></script>
 	<div class="panel panel-default">
 		<div class="panel-heading" style="text-align:center">
@@ -19,14 +23,14 @@
 					<div class="panel-body">	
 						<div class="row">
 							<div class="col-md-8">
-								<label> Minimo Aprobaciones <span style="color:red" href="#" style="cursor:pointer;" onclick="msj_ayuda(1)" title="Cantidad de aprobaciones necesarias para que un problema pueda estar disponible">(?)</span></label>
+								<label> Aprobaciones necesarias <span style="color:red" href="#" style="cursor:pointer;" onclick="msj_ayuda(1)" title="<?php echo $msj_aprobado; ?>" >(?)</span></label>
 								<input type="text" name="minimoa" id="minimoa" class="form-control" value="<?php echo $row_parametros_problemas['minimo_aprobado']; ?>">
 							</div>
 						</div>	
 
 						<div class="row">
 							<div class="col-md-8">
-								<label > Minimo Rechazos <span style="color:red" href="#" style="cursor:pointer;" onclick="msj_ayuda(2)" title="Cantidad de aprobaciones necesarias para que un problema pueda ser rechazado">(?)</span></label>
+								<label > Rechazos necesarios <span style="color:red" href="#" style="cursor:pointer;" onclick="msj_ayuda(2)" title="<?php echo $msj_rechazado; ?> " >(?)</span></label>
 								<input type="text"  name="minimor" id="minimor" class="form-control" value="<?php echo $row_parametros_problemas['minimo_rechazado']; ?>">
 							</div>
 						</div>	
@@ -84,7 +88,7 @@
 
 				<div class="panel panel-default">
 					<div class="panel-heading">
-							<label><span class="glyphicon glyphicon-list"></span> Roles que Aprueban el Sistema</label>
+							<label><span class="glyphicon glyphicon-list"></span> Roles que aprueban el problema</label>
 					</div>
 					<div class="panel-body">
 
@@ -140,11 +144,11 @@
 	function msj_ayuda(a){
 
 		if(a == 1){
-			msja="Aprobación minima para que el problema pueda estar disponible al usuario.";
+			msja="<?php echo $msj_aprobado; ?>";
 		}
 
 		if(a == 2){
-			msja="Rechazos minimos para que el problema no sea mostrado al usuario. ";
+			msja="<?php echo $msj_rechazado; ?>";
 		}
 
 		if(a == 3){

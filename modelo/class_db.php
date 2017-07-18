@@ -37,10 +37,17 @@ class db {
 	public function errores($nro,$error,$sql){
 		$_SESSION['msj_tipo']="danger";
 		switch($nro){
+			case 1451: {
+				
+				$_SESSION['msj']="Disculpe no es posible eliminar este registro ya que contiene dependencias, contacte al administrador de base de datos.";
+				//$_SESSION['redireccion']=$_SERVER['HTTP_REFERER'];
+				$this->registrar_bitacora('Intento de eliminar.','El registro ya contiene dependencias, por lo tanto no puede ser eliminado, Sentencia usada: '.$sql);
+			}
+			break;
 			case 1062: {
 				
 				$_SESSION['msj']="Disculpe este registro ya existe, verifique e intente nuevamente.";
-				$_SESSION['redireccion']=$_SERVER['HTTP_REFERER'];
+				//$_SESSION['redireccion']=$_SERVER['HTTP_REFERER'];
 				$this->registrar_bitacora('Intento de registro repetido','Sentencia usada: '.$sql);
 			}
 			break;
@@ -49,7 +56,9 @@ class db {
 				$this->registrar_bitacora('Error interno','Nro. '.$nro.' '.$this->mysqli->error.'. SQL: '.$sql);
 			}
 		}
+			
 		header('location:'.$_SERVER['REQUEST_URI']);
+		exit();
 	}
 //LA FUNCION ROW EXTRAE EL RESULTADO DEL QUERY RETORNANDO UN ARREGLO
 	public function row(){

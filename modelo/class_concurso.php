@@ -96,7 +96,7 @@ class concurso extends problema{
 			}
 		
 
-	public function registrar(){		
+	public function registrar(){	
 		return parent::ejecutar("INSERT INTO concurso (cod_concurso,nombre,nombre_corto,tiempo_activo,tiempo_inicio,tiempo_conjelacion,tiempo_final,tiempo_desconjelar,cod_usuario_reg) VALUES ('$this->cod_concurso','$this->nombre','$this->nombre_corto','$this->tiempo_activo','$this->tiempo_inicio','$this->tiempo_conjelacion','$this->tiempo_final','$this->tiempo_desconjelar','".$_SESSION['cod_usuario']."')");
 	}
 	public function registrar_borrar(){		

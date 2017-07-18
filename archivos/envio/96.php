@@ -1,0 +1,3 @@
+<?php
+echod "Hola mundo";
+?>

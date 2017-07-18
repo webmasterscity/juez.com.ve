@@ -46,7 +46,7 @@
 			}
 			$vista_tipo_usuario->commit();
 			$_SESSION["msj_tipo"]="success";
-			$_SESSION["msj"]="Registrado correctamente, Debe iniciar sessión nuevamente para que los cambios surtan efecto.";
+			$_SESSION["msj"]="Registrado correctamente, Debe iniciar sesión nuevamente para que los cambios surtan efecto.";
 		}
 			$vista_tipo_usuario= new $vista_tipo_usuario;
 			$html_todo=$vista_tipo_usuario->formulario('registrar');
@@ -88,23 +88,29 @@
 			}
 			
 			$_SESSION["msj_tipo"]="success";
-			$_SESSION["msj"]="Editado correctamente.";
+			$_SESSION["msj"]="Modificado correctamente.";
 			$html_todo=$vista_tipo_usuario->formulario('modificar');
 		}
 		break;
 		case 'desactivar':{
 			$vista_tipo_usuario->desactivar();
 			$html_todo=$vista_tipo_usuario->reporte_html_general($vista);
+			$_SESSION["msj_tipo"]="warning";
+			$_SESSION["msj"]="Registro desactivado.";
 		}
 		break;
 		case 'activar':{
 			$vista_tipo_usuario->activar();
 			$html_todo=$vista_tipo_usuario->reporte_html_general($vista);
+			$_SESSION["msj_tipo"]="success";
+			$_SESSION["msj"]="Registro activado.";
 		}
 		break;
 		case 'eliminar':{
 			$vista_tipo_usuario->eliminar();
 			$html_todo=$vista_tipo_usuario->reporte_html_general($vista);
+			$_SESSION["msj_tipo"]="warning";
+			$_SESSION["msj"]="Eliminado correctamente.";
 		}
 		break;
 		default:{

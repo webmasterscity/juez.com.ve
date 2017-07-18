@@ -180,7 +180,7 @@ require_once("vista/campo/campo_listado_soli_rol.php");
 
 						</div>
 						<div class="col-md-3"></div>
-						<div class="col-md-6">
+						<div class="col-md-6"><br>
 							<div style="text-align:center">
 								<button  onclick="return validar()" id="" class="btn btn-primary btn-lg"  type="submit" name="evento" value="aprobar">
 									<span class="glyphicon glyphicon-floppy-saved" > </span>

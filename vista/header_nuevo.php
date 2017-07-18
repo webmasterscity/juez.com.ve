@@ -16,7 +16,7 @@
 	
 <!--CARGAR STILO NOTIFICACIONES-->
 <script type="text/javascript" src="libreria/combinado.js.php"></script>
-
+	<link type="text/css" rel="stylesheet" id="chat_css" media="all" href="chat/external.php?type=css" charset="utf-8" />
 
 
 </head>

@@ -102,11 +102,41 @@
 	 * @param userid the user ID to get the profile link of
 	 * @return the link of the user ID's profile
 	 */
+	function codificar($msj){
+		# la clave debería ser binaria aleatoria, use scrypt, bcrypt o PBKDF2 para
+		# convertir un string en una clave
+		# la clave se especifica en formato hexadecimal
+		$key = pack('H*', "6c656f6e6172646f206a65737573206d656c656e64657a2073756c626172616e");
+	$iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC);
+		
+		# mostrar el tamaño de la clave, use claves de 16, 24 o 32 bytes para AES-128, 192
+		# y 256 respectivamente
+		$key_size =  strlen($key);
+		# crear una aleatoria IV para utilizarla co condificación CBC
+		
+		$iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
+		
+		# crea un texto cifrado compatible con AES (tamaño de bloque Rijndael = 128)
+		# para hacer el texto confidencial 
+		# solamente disponible para entradas codificadas que nunca finalizan con el
+		# el valor  00h (debido al relleno con ceros)
+		$msj = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $key,
+									 $msj, MCRYPT_MODE_CBC, $iv);
+
+		# anteponer la IV para que esté disponible para el descifrado
+		$msj = $iv . $msj;
+		
+		# codificar el texto cifrado resultante para que pueda ser representado por un string
+		$ciphertext_base64 = base64_encode($msj);
+
+		return  $ciphertext_base64;		
+		}
 	function get_link($link, $user_id) 
 	{
+		
 		global $base_url;
 		
-		return '?codificar('vista=dato_personal&evento=dato_personal_html&cod=' . $link;
+		return "?".codificar('vista=dato_personal&evento=dato_personal_html&cod='.$link);
 	}
 
 	/**
@@ -156,12 +186,13 @@
 		
 		$group_ids = array();
       
-		/*
+		
 		// Get all the groups the user ID is in
 		$result = $db->execute("
-			SELECT group_id
-			FROM " . TABLE_PREFIX . "user_group
-			WHERE user_id = '" . $db->escape_string($userid) . "'
+			SELECT cod_tipo_usuario
+			FROM usuario
+			INNER JOIN tipo_usuario USING(cod_tipo_usuario)
+			WHERE usuario.cod_usuario = '" . $db->escape_string($userid) . "'
 		");
       
 		if ($result AND $db->count_select() > 0) 
@@ -169,7 +200,7 @@
 			while ($row = $db->fetch_array($result))
 			{
 				// Fill the group IDs into an array
-				$group_ids[] = $row['group_id'];
+				$group_ids[] = $row['cod_tipo_usuario'];
 			}
 			 
 			return $group_ids;
@@ -178,10 +209,10 @@
 		{
 			return NULL;
 		}
-		*/
+		
 		
 		// Delete following line after customizing this function
-		return NULL;
+		#return NULL;
 	}
 	
 	/**
@@ -216,11 +247,11 @@
 		
 		$groups = array();
 		
-		/*
+		
 		// Get all the group IDs and group names that are available on your site
 		$result = $db->execute("
-			SELECT group_id, group_name
-			FROM " . TABLE_PREFIX . "groups
+			SELECT cod_tipo_usuario, nombre
+			FROM tipo_usuario
 		");
 		
 		if ($result AND $db->count_select() > 0) 
@@ -228,7 +259,7 @@
 			while ($row = $db->fetch_array($result))
 			{
 				// Fill an array with a nested array of (group id, group name)
-				$groups[] = array($row['group_id'], $row['group_name']);
+				$groups[] = array($row['cod_tipo_usuario'], $row['nombre']);
 			}
 			 
 			return $groups;
@@ -237,10 +268,10 @@
 		{
 			return NULL;
 		}
-		*/
+		
 		
 		// Delete following line after customizing this function
-		return NULL;
+		#return NULL;
 	}
 
 	/**

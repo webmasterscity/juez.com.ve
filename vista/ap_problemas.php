@@ -1,5 +1,6 @@
 <script type="text/javascript" src="libreria/bootstrap-3.3.6/js/bootbox.min.js"></script>
 <?php
+
 require_once("vista/campo/campo_ap_problemas.php");
 
 class vista_problema extends campo_problema{

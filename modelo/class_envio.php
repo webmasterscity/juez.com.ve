@@ -70,6 +70,16 @@ class envio extends concurso{
 		ORDER BY e.cod_envio ASC
 		");
 	}
+	public function ultimos_envios(){		
+		
+		return parent::ejecutar("SELECT p.nombre as nombre_problema, equipo.nombre as nombre_equipo, m.msj as resultado, m.cod_msj_salida, e.*,date_format(e.fecha_hora,'%d-%m-%Y %h:%i:%s %p') as fecha_hora, l.nombre as nombre_lenguaje FROM envio e
+		INNER JOIN lenguaje_prog l USING(cod_lenguaje_prog)
+		INNER JOIN problema p USING(cod_problema)
+		INNER JOIN msj_salida m USING(cod_msj_salida)
+		INNER JOIN equipo USING(cod_equipo) WHERE e.cod_concurso=$this->cod_concurso
+		ORDER BY e.cod_envio DESC LIMIT 0 , 15
+		");
+	}
 	public function consulta_para_juez(){		
 		return parent::ejecutar("SELECT e.*,l.comando, p.limite_tiempo, p.limite_memoria FROM envio e
 		INNER JOIN lenguaje_prog l USING(cod_lenguaje_prog)

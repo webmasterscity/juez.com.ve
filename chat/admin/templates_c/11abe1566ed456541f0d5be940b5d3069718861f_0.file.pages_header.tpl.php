@@ -39,7 +39,7 @@ function content_577f8e67546999_30446617 ($_smarty_tpl) {
 	<link rel="stylesheet" href="includes/css/itip/animate.css" type="text/css" media="screen">
 	
 	<?php echo '<script'; ?>
- type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"><?php echo '</script'; ?>
+ type="text/javascript" src="../../libreria/jquery/js/jquery-1.8.3.min.js"><?php echo '</script'; ?>
 > 
 	<?php echo '<script'; ?>
  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"><?php echo '</script'; ?>

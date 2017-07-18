@@ -27,6 +27,9 @@ class tipo_usuario extends db{
 	public function listar(){		
 		return parent::ejecutar("SELECT * FROM tipo_usuario ");
 	}
+	public function listar_sin_yo(){		
+		return parent::ejecutar("SELECT * FROM tipo_usuario WHERE cod_tipo_usuario<>'$this->cod_tipo_usuario'");
+	}
 	public function eliminar(){		
 		return parent::ejecutar("DELETE FROM tipo_usuario WHERE cod_tipo_usuario='$this->cod_tipo_usuario'");
 	}

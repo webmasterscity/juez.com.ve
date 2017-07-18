@@ -1,6 +1,10 @@
 <?php
 	$cne = new cne;
-	//$cne->get_datos('V','18671986');
+	$cedula=$_GET['c'];
+	$nacionalidad=$_GET['n'];
+	if($cedula and $nacionalidad){
+	$cne->get_datos($nacionalidad,$cedula);
+	}
 class cne {
 	public $nombre,
 			$apellido;

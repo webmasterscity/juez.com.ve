@@ -37,7 +37,10 @@
 	}
 	$_SESSION['nombre_vista']="";
 	?>
-	
+	 <link type="text/css" rel="stylesheet" href="css/footer.css">
+<script type="text/javascript" src="chat/external.php?type=djs" charset="utf-8"></script>
+<script type="text/javascript" src="chat/external.php?type=js" charset="utf-8"></script>
+
 </body>
 </html>
 

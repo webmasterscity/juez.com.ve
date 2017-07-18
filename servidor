@@ -7,6 +7,7 @@
 	include_once("vista/participar_entrenamiento.php");
 	include_once("modelo/class_concurso.php");
 	require_once("modelo/class_envio.php");
+	require_once("modelo/class_det_envio_comparacion.php");
 	$GLOBALS['dir_log']="log/ovijudge_".date("d-m-Y").".log";
 	error_log(date("d-m-Y h:i:s")." ".$_SESSION['cedula']." Servidor iniciado.\n", 3, $GLOBALS['dir_log']);
 	$msj_esperando_envio=true;
@@ -33,6 +34,7 @@
 			error_log(date("d-m-Y h:i:s")." ".$_SESSION['cedula']." Sentencia: ".$resultado."\n", 3, $GLOBALS['dir_log']);
 		}
 	}elseif($concurso){
+		$GLOBALS['concurso_activo']=true;
 		if($participar->consulta_para_juez()==1){
 			$concurso=true;
 			$msj_esperando_envio=true;
@@ -125,15 +127,17 @@ function ejecutar($comando,$input,$cod_envio,$limite_memoria,$limite_tiempo){
 	
 	return $row;
 }
-function ejecutar_sql($comando,$input,$cod_envio,$limite_memoria,$limite_tiempo){
+function ejecutar_sql($comando,$input,$cod_envio,$limite_memoria,$limite_tiempo,$codigo_archivo){
 
 	error_log(date("d-m-Y h:i:s")." ".$_SESSION['cedula']." Ejecutando ".$comando." para la entrada :\n", 3, $GLOBALS['dir_log']);
 	$descriptor = descriptor();
 	
 	foreach($input as $input){
+		crear_db_psql();
 		error_log($input."\n", 3, $GLOBALS['dir_log']);
 		error_log(date("d-m-Y h:i:s")." ".$_SESSION['cedula']." Verificando tiempo limite\n", 3, $GLOBALS['dir_log']);
-		$salida=verificar_limite_de_tiempo_memoria_sql($comando,$input,$limite_memoria,$limite_tiempo);
+		
+		$salida=verificar_limite_de_tiempo_memoria_sql($comando,$input,$limite_memoria,$limite_tiempo,$codigo_archivo);
 		error_log(date("d-m-Y h:i:s")." ".$_SESSION['cedula']." Tiempo limite verificado \n", 3, $GLOBALS['dir_log']);
 		
 		switch($salida['codigo']){
@@ -157,7 +161,7 @@ function ejecutar_sql($comando,$input,$cod_envio,$limite_memoria,$limite_tiempo)
 			}
 		
 		error_log(date("d-m-Y h:i:s")." ".$_SESSION['cedula']." listo\n", 3, $GLOBALS['dir_log']);
-
+		eliminar_db_psql();
 		
 	}
 
@@ -167,10 +171,20 @@ function ejecutar_sql($comando,$input,$cod_envio,$limite_memoria,$limite_tiempo)
 
 
 function resultado($row,$output,$cod_envio){
+	
+	if($GLOBALS['concurso_activo']){
+	$det_envio_comparacion = new det_envio_comparacion;
+	$det_envio_comparacion->set_cod_envio($cod_envio);
+	}
 	error_log(date("d-m-Y h:i:s")." ".$_SESSION['cedula']." Comparando resultados: \n", 3, $GLOBALS['dir_log']);
 	if(isset($row['resultado'])){
 		foreach($row['resultado'] as $i=>$resultado){
 			$eliminado_hex_cr = str_replace("\r", '', trim($output[$i]));
+			if($GLOBALS['concurso_activo']){
+				$det_envio_comparacion->set_salida(trim($resultado));
+				$det_envio_comparacion->set_salida_esperada(trim($output[$i]));
+				$det_envio_comparacion->registrar();
+			}
 			error_log(trim($resultado)." == ".trim($output[$i])."\n En hexadecimal: \n".strToHex(trim($resultado))." == ".strToHex($eliminado_hex_cr)."\n", 3, $GLOBALS['dir_log']);
 			if(trim($resultado)==trim($eliminado_hex_cr)){
 				$caso[$i]=1;
@@ -253,11 +267,11 @@ function proceso_de_lenguaje($comando,$url,$archivo,$cod_envio,$input_output,$co
 		switch($comando){
 			//BASE DE DATOS
 			case 'psql': {
-				crear_db_psql();
-				$comando="PGPASSWORD=20 psql -U leo -d usuario_".$_SESSION['cod_usuario']." -f ".$url.$archivo;
-				$row= ejecutar_sql($comando,$input_output['input'],$cod_envio,$limite_memoria,$limite_tiempo);
-				eliminar_db_psql();
 				
+				$comando="PGPASSWORD=20 psql -U leo -d usuario_".$_SESSION['cod_usuario'];
+				$codigo_archivo=$url.$archivo;
+				$row= ejecutar_sql($comando,$input_output['input'],$cod_envio,$limite_memoria,$limite_tiempo,$codigo_archivo);
+				eliminar_db_psql();
 				$resultado= resultado($row,$input_output['output'],$cod_envio);
 				
 			}
@@ -347,27 +361,47 @@ function proceso_de_lenguaje($comando,$url,$archivo,$cod_envio,$input_output,$co
 	}
 	
 
-function verificar_limite_de_tiempo_memoria_sql($cmd,$input,$limite_memoria,$limite_tiempo){
+function verificar_limite_de_tiempo_memoria_sql($cmd,$input,$limite_memoria,$limite_tiempo,$codigo_archivo){
 	$descriptor = descriptor();
 	//$cmd="timeout ".$limite_tiempo." /usr/bin/time  -f 'memo%M' ".$cmd;
-	//exit($cmd);
 	
+	if($input=='0'){
+		$cmd=$cmd.' -f '.$codigo_archivo;
+		}else{
+			
+				$resultado_consulta=shell_exec("PGPASSWORD=20 psql -U leo usuario_".$_SESSION['cod_usuario']." < ".$codigo_archivo);
+			}
+
 	$resultado_ejecucion 	= proc_open($cmd, $descriptor, $pipes);
 	
 	//$pipes[1] resultado
 	//$pipes[2] error
 	//$pipes[0] noc
-	fwrite($pipes[0], $input);
-	fclose($pipes[0]);
-	//$a=stream_get_contents($pipes[0]);
+
+		fwrite($pipes[0], $input);
+		fclose($pipes[0]);
+		//$a=stream_get_contents($pipes[0]);
+		
+		$b=stream_get_contents($pipes[1]);
+		$c=stream_get_contents($pipes[2]);
+		$code=proc_close($resultado_ejecucion);		
 	
-	$b=stream_get_contents($pipes[1]);
-	$c=stream_get_contents($pipes[2]);
-	$code=proc_close($resultado_ejecucion);
 	$arreglo['codigo']=$code;
+	//eliminar la palabra rows() que puede estar en ingles o español
+	$re=explode("\n",$b);
+	foreach($re as $cod=>$valor){
+		if($ags){
+			$resultado_consulta_final.=$valor."\n";
+			}
+		if($valor[0]=='-'){
+			#Activar guardado salida
+			$ags=true;
+			}
+
+		}
+	$ags=false;
+	$re=explode('(',$resultado_consulta_final);
 	
-	$re=explode('-------------',$b);
-	$re=explode('(',$re[1]);
 	$arreglo['output']=trim($re[0]);
 	
 	$me=explode("memo",$c);
@@ -378,12 +412,17 @@ function verificar_limite_de_tiempo_memoria_sql($cmd,$input,$limite_memoria,$lim
 	$datos="CMD: ".$cmd."\n Resultado ejecucion: ".$resultado_ejecucion."\n Codigo: ".$code."\n  output: ".$b."\n memoria: ".$c." con explode: ".$arreglo['memoria']."\n error con explode: ".$arreglo['error'];
 	error_log(date("d-m-Y h:i:s")." ".$_SESSION['cedula']." COMPARANDO MEMORIA: ".$arreglo['memoria'].">".$limite_memoria."\n", 3, $GLOBALS['dir_log']);
 	error_log(date("d-m-Y h:i:s")." ".$_SESSION['cedula']." DATOS ARROJADOS AL VERIFICAR TIEMPO LIMITE:".$datos." \n", 3, $GLOBALS['dir_log']);
+	#exit('\i /var/www/html/ovij/'.$codigo_archivo);
 	/*if(intval($arreglo['memoria'])>intval($limite_memoria)){
 		$arreglo['codigo']=777;
 	}*/
 	
 	if(intval($arreglo['error'])!=0)
 		$arreglo['codigo']=999;
+	$memo_con_explode=explode(':',$c);
+	if(trim($memo_con_explode[0])=='ERROR'){
+		$arreglo['codigo']=999;
+		}
 		
 	return $arreglo;
 }
@@ -433,7 +472,6 @@ function strToHex($string){
 }
 function crear_db_psql(){
 		shell_exec("PGPASSWORD=20 psql -U leo -c 'CREATE DATABASE usuario_".$_SESSION['cod_usuario']."'");
-
 	}	
 function eliminar_db_psql(){
 		shell_exec("PGPASSWORD=20 psql -U leo -c 'DROP DATABASE usuario_".$_SESSION['cod_usuario']."'");

@@ -17,6 +17,8 @@ switch($evento){
 		}
 		if($total==$total_bueno){
 			$vista_c->COMMIT();
+			$_SESSION['msj_tipo']='success';
+			$_SESSION['msj']='Actualizado correctamente.';
 			
 		}else{
 			$vista_c->ROLLBACK();
