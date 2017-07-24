@@ -180,7 +180,7 @@
 			$lobjPdf->Ln();
 			$lobjPdf->SetFont("Arial","",10);
 
-			$lobjPdf->WriteHTML(utf8_decode($problema->enunciado));
+			$lobjPdf->WriteHTML(utf8_decode(html_entity_decode($problema->enunciado)));
 			$lobjPdf->Ln(5);
 			if($problema->texto_problema){
 				$formato=formato($problema->texto_problema);
