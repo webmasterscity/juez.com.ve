@@ -75,13 +75,11 @@ function mostrar_enlaces(){
 				</div>
 				<div class="panel-body">
 					<div class="row">
-						<div class="col-md-4 center">
+						<div class="col-md-6 center">
 							<a href="http://www.ovi.net.ve/" target="_blank"><img width="145" height="68" src="images/logo-smashing.png"></a>
 						</div>
-						<div class="col-md-4 center">
-							<a href="https://icpc.baylor.edu/" target="_blank"><img width="254" height="90" src="images/logo-pixel.png" width="200"></a>
-						</div>
-						<div class="col-md-4 center">
+		
+						<div class="col-md-6 center">
 							<a href="http://iutep.tec.ve/" target="_blank"><img width="209" height="65" src="images/logo-w.png"></a>
 						</div>
 
