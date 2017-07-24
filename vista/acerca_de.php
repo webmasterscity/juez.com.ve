@@ -7,7 +7,7 @@
 		creado por estudiantes de la Universidad Politécnica Territorial del Estado Portuguesa "Juan de Jesus Montilla".<br><br>
 		<b>Desarrollador:</b><br>
 		Leonardo J. Meléndez S.<br>
-		<b>Metodologia:</b><br>
+		<b>Metodología:</b><br>
 		Leonardo J. Meléndez S.<br>
 		Wilfram Morales<br>
 		Jesus Romero<br>
