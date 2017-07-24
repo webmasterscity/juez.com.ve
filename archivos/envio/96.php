@@ -1,3 +1,0 @@
-<?php
-echod "Hola mundo";
-?>

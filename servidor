@@ -53,7 +53,7 @@
 			fclose($fp);
 			$input_output=input_output($cod_problema);
 			$resultado=proceso_de_lenguaje($comando,$url,$archivo,$cod_envio,$input_output,$codigo_fuente,$limite_memoria,$limite_tiempo);
-		
+			eliminar_archivo($url.$archivo);
 			error_log(date("d-m-Y h:i:s")." ".$_SESSION['cedula']." Sentencia: ".$resultado."\n", 3, $GLOBALS['dir_log']);	
 		}
 	}else{
