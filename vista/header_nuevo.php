@@ -86,7 +86,7 @@ echo ocultar_menu();
 		function panel_usuario(){
 			$html.='    
                         <div class="thumb"><a href="?'.codificar('vista=mi_perfil').' ">'.foto_perfil_peque_redonda($_SESSION['cedula']).'</a></div>
-                        <div class="info center" ><p style="font-size:12px">'.ucwords(strtolower($_SESSION['nombre_usuario'].' '.$_SESSION['apellido_usuario'])).'<br>'.ucwords(strtolower($_SESSION['nombre_tipo_usuario'])).'</p>
+                        <div class="info center" ><p style="font-size:12px">'.substr(ucwords(strtolower($_SESSION['nombre_usuario'].' '.$_SESSION['apellido_usuario'].".")),0,20).'<br>'.ucwords(strtolower($_SESSION['nombre_tipo_usuario'])).'</p>
                             <ul class="list-inline list-unstyled">
                                 <li><a href="?'.codificar('vista=mi_perfil').' " data-hover="tooltip" title="Mi perfil"><i class="fa fa-user"></i></a></li> 
 								<li><a href="?'.codificar('vista=tema').' " data-hover="tooltip" title="Tema"><i class="glyphicon glyphicon-tint"></i></a></li> 

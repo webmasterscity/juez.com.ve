@@ -5,7 +5,9 @@
 	<div class="panel-body justificar">
 		OVIJUDGE es una sistema de entrenamiento online para competencias internacionales de programación 
 		creado por estudiantes de la Universidad Politécnica Territorial del Estado Portuguesa "Juan de Jesus Montilla".<br><br>
-		<b>Desarrolladores:</b><br>
+		<b>Desarrollador:</b><br>
+		Leonardo J. Meléndez S.<br>
+		<b>Metodologia:</b><br>
 		Leonardo J. Meléndez S.<br>
 		Wilfram Morales<br>
 		Jesus Romero<br>
