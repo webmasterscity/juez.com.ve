@@ -53,7 +53,7 @@
 			$solicitud_cambio_rol->operacion(2,$_POST['observa']);
 			$solicitud_cambio_rol->registrar_bitacora("Aprobo","El cambio de rol al usuario :".$_POST['dato'].' ha: '.$_POST['rol']);
 
-			$mensaje=strtoupper('Ha sido Aprobada su solicitud de Cambio de rol ha : '.$_POST['rol'].' Obsv: '.$_POST['observa']);
+			$mensaje=strtoupper('Solicitud Aprobada! su solicitud de Cambio de rol a '.$_POST['rol'].' se aprobo correctamente, Observación: '.$_POST['observa']);
 			$url='#'; $observacion='';
 			registrar_notificacion($mensaje,$url,$_POST['usu'],$observacion);
 			$sql="update usuario set cod_tipo_usuario='".$_POST['cod_rol']."' "; $solicitud_cambio_rol->ejecutar($sql);

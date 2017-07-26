@@ -79,9 +79,14 @@
 			//chmod("archivos/cambio_rol/", 0777); 
 
 			$cambiar->registrar(); 
-			$mensaje=strtoupper('Se esta evaluando su solicitud de cambio de rol ');
+			
+			$mensaje=strtoupper('Solicitud realizada correctamente!, esperando aprobación del administrador.');
 			$url='#'; $observacion='';
 			registrar_notificacion($mensaje,$url,$_SESSION['cod_usuario'],$observacion);
+			
+			//Msj para el administrador
+			$msj='Solicitud de cambio de rol.';
+			registrar_notificacion($msj,$url,5,$observacion);
 
 			$_SESSION['msj']='Solicitud enviada correctamente';
 			$_SESSION['msj_tipo']='success';
@@ -134,7 +139,7 @@
 
 
 				$cambiar->registrar(); 
-				$mensaje=strtoupper('Se esta evaluando su solicitud de cambio de rol ');
+				$mensaje=strtoupper('Se esta evaluando su solicitud de cambio de rol.');
 				$url='#'; $observacion='';
 				registrar_notificacion($mensaje,$url,$_SESSION['cod_usuario'],$observacion);
 

@@ -22,7 +22,7 @@
 		$sqldt="select * from solicitud_cambio_rol as cr, tipo_usuario as tp where cr.cod_usuario='".$_SESSION['cod_usuario']."' AND tp.cod_tipo_usuario=cr.cod_rol AND cr.estatus='1' ";
 		if($det->ejecutar($sqldt)){
 			$row=$det->row();
-			$_SESSION['msj']='Su solicitud de cambio a '.$row['nombre'].' se esta evaluando.';
+			$_SESSION['msj']='Solicitud realizada correctamente!, esperando aprobación del administrador.';
 			$_SESSION['msj_tipo']='success';
 			//exit('<script> window.location.href="index.php"; </script>');
 
